@@ -8,17 +8,17 @@ Continual learning aims to learn new knowledge from a sequence of tasks without 
 
 ## Experiments
 
-#### Datasets
+### Datasets
 
 The dataset for CIFAR-100 will be automatically downloaded. For the experiments on MiniImageNet, please download the [train_data](https://drive.google.com/file/d/1fm6TcKIwELbuoEOOdvxq72TtUlZlvGIm/view?usp=sharing) and [test_data](https://drive.google.com/file/d/1RA-MluRWM4fqxG9HQbQBBVVjDddYPCri/view?usp=sharing).
 
-#### Requirements
+### Requirements
 
 ~~~python
 pip install -r requirements.txt
 ~~~
 
-#### Implementation
+### Implementation
 
 ~~~python
 python main_cf100_GPCNS.py
