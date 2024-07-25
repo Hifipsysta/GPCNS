@@ -1,0 +1,1399 @@
+The start time is: 2024-03-24 07:22:20 
+
+My job ID is: 8339 
+
+The total cores is: 2 
+
+The hosts is: 
+
+
+
+====================================================================================================
+Arguments =
+	batch_size_train: 64
+	batch_size_test: 64
+	n_epochs: 200
+	seed: 5
+	pc_valid: 0.05
+	lr: 0.05
+	momentum: 0.9
+	lr_min: 5e-05
+	lr_patience: 6
+	lr_factor: 2
+	scale_coff: 1.5
+	gpm_eps: 0.97
+	gpm_eps_inc: 0.003
+====================================================================================================
+cuda:0
+Task order = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+****************************************************************************************************
+Task  0 (cifar100-0)
+****************************************************************************************************
+----------------------------------------
+Task ID :0 | Learning Rate : 0.05
+----------------------------------------
+Epoch   1 | Train: loss=3.215, acc= 34.1% | time=2734.6ms | Valid: loss=3.160, acc= 35.2% | *
+Epoch   2 | Train: loss=2.115, acc= 46.5% | time=203.4ms | Valid: loss=1.943, acc= 51.2% | *
+Epoch   3 | Train: loss=1.708, acc= 55.4% | time=200.8ms | Valid: loss=2.080, acc= 49.2% |
+Epoch   4 | Train: loss=1.454, acc= 57.8% | time=201.0ms | Valid: loss=1.882, acc= 50.4% | *
+Epoch   5 | Train: loss=1.477, acc= 59.1% | time=203.3ms | Valid: loss=1.952, acc= 52.4% |
+Epoch   6 | Train: loss=1.435, acc= 62.5% | time=200.9ms | Valid: loss=1.927, acc= 56.4% |
+Epoch   7 | Train: loss=1.502, acc= 58.6% | time=200.7ms | Valid: loss=1.959, acc= 50.4% |
+Epoch   8 | Train: loss=1.459, acc= 62.9% | time=200.8ms | Valid: loss=2.192, acc= 49.2% |
+Epoch   9 | Train: loss=2.069, acc= 51.2% | time=201.2ms | Valid: loss=2.473, acc= 47.6% |
+Epoch  10 | Train: loss=1.207, acc= 67.5% | time=204.1ms | Valid: loss=1.958, acc= 56.0% | lr=2.5e-02
+Epoch  11 | Train: loss=0.483, acc= 83.4% | time=201.5ms | Valid: loss=1.084, acc= 70.8% | *
+Epoch  12 | Train: loss=0.434, acc= 84.8% | time=201.1ms | Valid: loss=1.131, acc= 70.0% |
+Epoch  13 | Train: loss=0.564, acc= 80.8% | time=201.7ms | Valid: loss=1.218, acc= 66.0% |
+Epoch  14 | Train: loss=0.502, acc= 83.5% | time=201.3ms | Valid: loss=1.043, acc= 70.0% | *
+Epoch  15 | Train: loss=0.418, acc= 86.1% | time=201.9ms | Valid: loss=1.186, acc= 70.4% |
+Epoch  16 | Train: loss=0.334, acc= 87.9% | time=201.8ms | Valid: loss=0.983, acc= 72.0% | *
+Epoch  17 | Train: loss=0.295, acc= 89.6% | time=202.5ms | Valid: loss=1.027, acc= 74.8% |
+Epoch  18 | Train: loss=0.311, acc= 88.9% | time=201.9ms | Valid: loss=1.065, acc= 73.6% |
+Epoch  19 | Train: loss=0.232, acc= 92.0% | time=201.8ms | Valid: loss=1.101, acc= 72.8% |
+Epoch  20 | Train: loss=0.403, acc= 86.1% | time=202.0ms | Valid: loss=1.288, acc= 68.8% |
+Epoch  21 | Train: loss=0.196, acc= 93.2% | time=202.0ms | Valid: loss=1.040, acc= 75.6% |
+Epoch  22 | Train: loss=0.210, acc= 92.8% | time=202.1ms | Valid: loss=1.071, acc= 71.6% | lr=1.3e-02
+Epoch  23 | Train: loss=0.138, acc= 95.2% | time=202.5ms | Valid: loss=0.969, acc= 75.6% | *
+Epoch  24 | Train: loss=0.135, acc= 95.3% | time=202.0ms | Valid: loss=0.997, acc= 76.8% |
+Epoch  25 | Train: loss=0.128, acc= 95.7% | time=201.8ms | Valid: loss=0.995, acc= 77.2% |
+Epoch  26 | Train: loss=0.146, acc= 94.9% | time=201.9ms | Valid: loss=1.096, acc= 71.6% |
+Epoch  27 | Train: loss=0.109, acc= 96.3% | time=202.3ms | Valid: loss=1.001, acc= 76.8% |
+Epoch  28 | Train: loss=0.130, acc= 95.5% | time=201.7ms | Valid: loss=1.111, acc= 71.6% |
+Epoch  29 | Train: loss=0.097, acc= 96.9% | time=202.1ms | Valid: loss=1.002, acc= 76.8% | lr=6.3e-03
+Epoch  30 | Train: loss=0.077, acc= 97.8% | time=203.3ms | Valid: loss=1.032, acc= 76.0% |
+Epoch  31 | Train: loss=0.099, acc= 96.8% | time=201.7ms | Valid: loss=0.970, acc= 76.0% |
+Epoch  32 | Train: loss=0.075, acc= 97.7% | time=201.1ms | Valid: loss=0.997, acc= 76.8% |
+Epoch  33 | Train: loss=0.065, acc= 98.1% | time=200.6ms | Valid: loss=1.037, acc= 76.0% |
+Epoch  34 | Train: loss=0.091, acc= 97.0% | time=201.0ms | Valid: loss=0.952, acc= 80.0% | *
+Epoch  35 | Train: loss=0.072, acc= 97.8% | time=201.5ms | Valid: loss=0.985, acc= 76.8% |
+Epoch  36 | Train: loss=0.065, acc= 98.1% | time=201.2ms | Valid: loss=1.028, acc= 76.8% |
+Epoch  37 | Train: loss=0.061, acc= 98.2% | time=201.3ms | Valid: loss=1.073, acc= 74.4% |
+Epoch  38 | Train: loss=0.060, acc= 98.4% | time=201.0ms | Valid: loss=0.956, acc= 76.4% |
+Epoch  39 | Train: loss=0.062, acc= 98.0% | time=203.4ms | Valid: loss=1.013, acc= 76.8% |
+Epoch  40 | Train: loss=0.074, acc= 97.7% | time=201.5ms | Valid: loss=1.033, acc= 75.2% | lr=3.1e-03
+Epoch  41 | Train: loss=0.051, acc= 98.6% | time=201.0ms | Valid: loss=0.982, acc= 79.6% |
+Epoch  42 | Train: loss=0.049, acc= 98.9% | time=201.2ms | Valid: loss=1.021, acc= 76.8% |
+Epoch  43 | Train: loss=0.049, acc= 98.7% | time=203.5ms | Valid: loss=0.964, acc= 80.0% |
+Epoch  44 | Train: loss=0.046, acc= 98.8% | time=201.8ms | Valid: loss=1.070, acc= 76.0% |
+Epoch  45 | Train: loss=0.048, acc= 98.7% | time=201.4ms | Valid: loss=1.030, acc= 76.4% |
+Epoch  46 | Train: loss=0.047, acc= 98.8% | time=201.2ms | Valid: loss=0.945, acc= 78.8% | *
+Epoch  47 | Train: loss=0.041, acc= 99.0% | time=201.4ms | Valid: loss=1.011, acc= 76.8% |
+Epoch  48 | Train: loss=0.042, acc= 98.9% | time=202.3ms | Valid: loss=0.954, acc= 78.0% |
+Epoch  49 | Train: loss=0.042, acc= 99.1% | time=202.2ms | Valid: loss=0.977, acc= 79.2% |
+Epoch  50 | Train: loss=0.041, acc= 99.0% | time=201.4ms | Valid: loss=0.949, acc= 78.8% |
+Epoch  51 | Train: loss=0.042, acc= 98.9% | time=201.6ms | Valid: loss=0.965, acc= 80.4% |
+Epoch  52 | Train: loss=0.043, acc= 98.9% | time=203.5ms | Valid: loss=1.001, acc= 77.2% | lr=1.6e-03
+Epoch  53 | Train: loss=0.040, acc= 99.0% | time=201.5ms | Valid: loss=0.980, acc= 81.6% |
+Epoch  54 | Train: loss=0.038, acc= 99.1% | time=201.6ms | Valid: loss=0.998, acc= 76.8% |
+Epoch  55 | Train: loss=0.038, acc= 99.1% | time=201.8ms | Valid: loss=0.985, acc= 80.0% |
+Epoch  56 | Train: loss=0.034, acc= 99.3% | time=201.8ms | Valid: loss=1.047, acc= 80.0% |
+Epoch  57 | Train: loss=0.036, acc= 99.4% | time=201.6ms | Valid: loss=0.992, acc= 78.0% |
+Epoch  58 | Train: loss=0.038, acc= 99.0% | time=201.6ms | Valid: loss=1.036, acc= 79.2% | lr=7.8e-04
+Epoch  59 | Train: loss=0.037, acc= 99.1% | time=201.7ms | Valid: loss=1.054, acc= 77.6% |
+Epoch  60 | Train: loss=0.033, acc= 99.2% | time=201.4ms | Valid: loss=1.065, acc= 79.2% |
+Epoch  61 | Train: loss=0.034, acc= 99.3% | time=206.0ms | Valid: loss=0.986, acc= 77.6% |
+Epoch  62 | Train: loss=0.036, acc= 99.1% | time=201.5ms | Valid: loss=0.984, acc= 79.2% |
+Epoch  63 | Train: loss=0.034, acc= 99.3% | time=201.5ms | Valid: loss=1.003, acc= 80.0% |
+Epoch  64 | Train: loss=0.035, acc= 99.2% | time=201.3ms | Valid: loss=1.005, acc= 78.4% | lr=3.9e-04
+Epoch  65 | Train: loss=0.033, acc= 99.3% | time=213.5ms | Valid: loss=0.999, acc= 79.2% |
+Epoch  66 | Train: loss=0.035, acc= 99.2% | time=201.3ms | Valid: loss=0.996, acc= 77.6% |
+Epoch  67 | Train: loss=0.037, acc= 99.0% | time=201.6ms | Valid: loss=1.006, acc= 77.6% |
+Epoch  68 | Train: loss=0.035, acc= 99.1% | time=201.4ms | Valid: loss=0.997, acc= 79.2% |
+Epoch  69 | Train: loss=0.037, acc= 99.2% | time=201.2ms | Valid: loss=1.044, acc= 79.6% |
+Epoch  70 | Train: loss=0.032, acc= 99.3% | time=201.6ms | Valid: loss=0.986, acc= 80.0% | lr=2.0e-04
+Epoch  71 | Train: loss=0.036, acc= 99.2% | time=200.8ms | Valid: loss=1.028, acc= 79.6% |
+Epoch  72 | Train: loss=0.033, acc= 99.3% | time=201.1ms | Valid: loss=0.993, acc= 78.0% |
+Epoch  73 | Train: loss=0.033, acc= 99.3% | time=201.1ms | Valid: loss=1.032, acc= 82.0% |
+Epoch  74 | Train: loss=0.034, acc= 99.2% | time=201.1ms | Valid: loss=1.030, acc= 78.8% |
+Epoch  75 | Train: loss=0.038, acc= 99.0% | time=201.8ms | Valid: loss=0.999, acc= 78.8% |
+Epoch  76 | Train: loss=0.034, acc= 99.3% | time=201.1ms | Valid: loss=1.024, acc= 79.2% | lr=9.8e-05
+Epoch  77 | Train: loss=0.036, acc= 99.1% | time=201.2ms | Valid: loss=1.039, acc= 78.4% |
+Epoch  78 | Train: loss=0.037, acc= 98.9% | time=200.8ms | Valid: loss=0.957, acc= 78.8% |
+Epoch  79 | Train: loss=0.034, acc= 99.3% | time=202.7ms | Valid: loss=1.045, acc= 78.4% |
+Epoch  80 | Train: loss=0.032, acc= 99.3% | time=200.8ms | Valid: loss=1.016, acc= 76.8% |
+Epoch  81 | Train: loss=0.035, acc= 99.2% | time=200.9ms | Valid: loss=1.007, acc= 79.6% |
+Epoch  82 | Train: loss=0.031, acc= 99.3% | time=200.7ms | Valid: loss=0.998, acc= 78.8% | lr=4.9e-05
+----------------------------------------
+Test: loss=0.933 , acc= 76.9%
+#####len(mat_list)#####len(grad_list) 5 5
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (48, 20184)
+Layer 2 : (576, 14400)
+Layer 3 : (512, 2500)
+Layer 4 : (1024, 125)
+Layer 5 : (2048, 125)
+------------------------------
+threshold_list:  [0.97 0.97 0.97 0.97 0.97]
+Gradient Matrix torch.Size([64, 48])
+Rank of Matrix： tensor(0, device='cuda:0')
+space_list[i] torch.Size([48, 0])
+Revised space_list[i] torch.Size([48, 6])
+Gradient Matrix torch.Size([128, 576])
+Rank of Matrix： tensor(13, device='cuda:0')
+space_list[i] torch.Size([576, 13])
+Revised space_list[i] torch.Size([576, 116])
+Gradient Matrix torch.Size([256, 512])
+Rank of Matrix： tensor(19, device='cuda:0')
+space_list[i] torch.Size([512, 19])
+Revised space_list[i] torch.Size([512, 180])
+Gradient Matrix torch.Size([2048, 1024])
+Rank of Matrix： tensor(0, device='cuda:0')
+space_list[i] torch.Size([1024, 0])
+Revised space_list[i] torch.Size([1024, 75])
+Gradient Matrix torch.Size([2048, 2048])
+Rank of Matrix： tensor(0, device='cuda:0')
+space_list[i] torch.Size([2048, 0])
+Revised space_list[i] torch.Size([2048, 88])
+----------------------------------------
+Common Null Space Matrix
+----------------------------------------
+Layer 1 : 48 * 6
+Layer 2 : 576 * 116
+Layer 3 : 512 * 180
+Layer 4 : 1024 * 75
+Layer 5 : 2048 * 88
+----------------------------------------
+Current memory usage: RSS=7254.86MB, VMS=17362.96MB
+Accuracies =
+	 77.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+****************************************************************************************************
+Task  1 (cifar100-1)
+****************************************************************************************************
+----------------------------------------
+Task ID :1 | Learning Rate : 0.05
+----------------------------------------
+Epoch   1 | Train: loss=1.365, acc= 53.5% | time=312.6ms | Valid: loss=1.506, acc= 48.8% | *
+Epoch   2 | Train: loss=1.292, acc= 58.9% | time=303.3ms | Valid: loss=1.439, acc= 52.8% | *
+Epoch   3 | Train: loss=1.356, acc= 58.3% | time=302.8ms | Valid: loss=1.515, acc= 53.2% |
+Epoch   4 | Train: loss=1.176, acc= 63.7% | time=302.9ms | Valid: loss=1.734, acc= 53.2% |
+Epoch   5 | Train: loss=0.923, acc= 70.1% | time=303.0ms | Valid: loss=1.438, acc= 58.8% | *
+Epoch   6 | Train: loss=0.798, acc= 75.0% | time=303.8ms | Valid: loss=1.451, acc= 62.4% |
+Epoch   7 | Train: loss=0.640, acc= 79.4% | time=302.8ms | Valid: loss=1.274, acc= 66.8% | *
+Epoch   8 | Train: loss=0.527, acc= 82.5% | time=303.3ms | Valid: loss=1.239, acc= 62.4% | *
+Epoch   9 | Train: loss=0.548, acc= 81.9% | time=303.0ms | Valid: loss=1.285, acc= 61.2% |
+Epoch  10 | Train: loss=0.449, acc= 84.4% | time=303.0ms | Valid: loss=1.376, acc= 61.6% |
+Epoch  11 | Train: loss=0.383, acc= 87.1% | time=304.1ms | Valid: loss=1.299, acc= 65.2% |
+Epoch  12 | Train: loss=0.330, acc= 88.8% | time=302.9ms | Valid: loss=1.326, acc= 64.8% |
+Epoch  13 | Train: loss=0.453, acc= 85.7% | time=302.9ms | Valid: loss=1.491, acc= 63.2% |
+Epoch  14 | Train: loss=0.252, acc= 91.3% | time=302.0ms | Valid: loss=1.229, acc= 66.8% | *
+Epoch  15 | Train: loss=0.211, acc= 92.8% | time=302.2ms | Valid: loss=1.269, acc= 68.4% |
+Epoch  16 | Train: loss=0.235, acc= 91.7% | time=304.6ms | Valid: loss=1.422, acc= 64.0% |
+Epoch  17 | Train: loss=0.188, acc= 93.4% | time=302.9ms | Valid: loss=1.349, acc= 67.2% |
+Epoch  18 | Train: loss=0.138, acc= 95.5% | time=303.1ms | Valid: loss=1.446, acc= 66.4% |
+Epoch  19 | Train: loss=0.225, acc= 92.4% | time=302.6ms | Valid: loss=1.550, acc= 67.6% |
+Epoch  20 | Train: loss=0.117, acc= 96.1% | time=302.4ms | Valid: loss=1.448, acc= 66.4% | lr=2.5e-02
+Epoch  21 | Train: loss=0.096, acc= 96.8% | time=302.0ms | Valid: loss=1.336, acc= 69.2% |
+Epoch  22 | Train: loss=0.071, acc= 97.8% | time=302.6ms | Valid: loss=1.261, acc= 70.8% |
+Epoch  23 | Train: loss=0.057, acc= 98.4% | time=304.4ms | Valid: loss=1.234, acc= 71.6% |
+Epoch  24 | Train: loss=0.053, acc= 98.7% | time=302.1ms | Valid: loss=1.274, acc= 71.6% |
+Epoch  25 | Train: loss=0.049, acc= 98.6% | time=302.3ms | Valid: loss=1.284, acc= 70.0% |
+Epoch  26 | Train: loss=0.046, acc= 98.8% | time=302.5ms | Valid: loss=1.310, acc= 70.0% | lr=1.3e-02
+Epoch  27 | Train: loss=0.037, acc= 99.2% | time=302.6ms | Valid: loss=1.208, acc= 72.0% | *
+Epoch  28 | Train: loss=0.041, acc= 99.0% | time=302.8ms | Valid: loss=1.226, acc= 71.2% |
+Epoch  29 | Train: loss=0.035, acc= 99.3% | time=303.4ms | Valid: loss=1.300, acc= 72.0% |
+Epoch  30 | Train: loss=0.031, acc= 99.3% | time=303.3ms | Valid: loss=1.320, acc= 70.0% |
+Epoch  31 | Train: loss=0.032, acc= 99.3% | time=302.5ms | Valid: loss=1.309, acc= 71.2% |
+Epoch  32 | Train: loss=0.029, acc= 99.3% | time=302.6ms | Valid: loss=1.279, acc= 71.6% |
+Epoch  33 | Train: loss=0.028, acc= 99.5% | time=302.5ms | Valid: loss=1.231, acc= 70.8% | lr=6.3e-03
+Epoch  34 | Train: loss=0.024, acc= 99.6% | time=319.0ms | Valid: loss=1.328, acc= 71.2% |
+Epoch  35 | Train: loss=0.026, acc= 99.6% | time=302.3ms | Valid: loss=1.277, acc= 70.8% |
+Epoch  36 | Train: loss=0.025, acc= 99.5% | time=302.1ms | Valid: loss=1.243, acc= 71.2% |
+Epoch  37 | Train: loss=0.026, acc= 99.5% | time=302.6ms | Valid: loss=1.244, acc= 69.2% |
+Epoch  38 | Train: loss=0.021, acc= 99.7% | time=302.3ms | Valid: loss=1.244, acc= 70.4% |
+Epoch  39 | Train: loss=0.025, acc= 99.5% | time=304.9ms | Valid: loss=1.241, acc= 72.8% | lr=3.1e-03
+Epoch  40 | Train: loss=0.023, acc= 99.6% | time=302.3ms | Valid: loss=1.258, acc= 70.4% |
+Epoch  41 | Train: loss=0.024, acc= 99.6% | time=302.2ms | Valid: loss=1.193, acc= 71.6% | *
+Epoch  42 | Train: loss=0.022, acc= 99.6% | time=302.5ms | Valid: loss=1.298, acc= 70.0% |
+Epoch  43 | Train: loss=0.024, acc= 99.6% | time=302.4ms | Valid: loss=1.241, acc= 70.0% |
+Epoch  44 | Train: loss=0.022, acc= 99.5% | time=305.0ms | Valid: loss=1.239, acc= 68.4% |
+Epoch  45 | Train: loss=0.021, acc= 99.7% | time=302.6ms | Valid: loss=1.263, acc= 72.4% |
+Epoch  46 | Train: loss=0.022, acc= 99.6% | time=302.2ms | Valid: loss=1.231, acc= 72.0% |
+Epoch  47 | Train: loss=0.020, acc= 99.7% | time=302.3ms | Valid: loss=1.249, acc= 74.0% | lr=1.6e-03
+Epoch  48 | Train: loss=0.020, acc= 99.8% | time=302.1ms | Valid: loss=1.278, acc= 71.6% |
+Epoch  49 | Train: loss=0.021, acc= 99.6% | time=302.1ms | Valid: loss=1.226, acc= 70.8% |
+Epoch  50 | Train: loss=0.022, acc= 99.6% | time=302.1ms | Valid: loss=1.287, acc= 72.0% |
+Epoch  51 | Train: loss=0.020, acc= 99.7% | time=301.6ms | Valid: loss=1.214, acc= 69.6% |
+Epoch  52 | Train: loss=0.019, acc= 99.7% | time=301.9ms | Valid: loss=1.306, acc= 71.6% |
+Epoch  53 | Train: loss=0.022, acc= 99.5% | time=302.1ms | Valid: loss=1.245, acc= 71.6% | lr=7.8e-04
+Epoch  54 | Train: loss=0.022, acc= 99.6% | time=302.4ms | Valid: loss=1.283, acc= 72.0% |
+Epoch  55 | Train: loss=0.019, acc= 99.7% | time=302.2ms | Valid: loss=1.283, acc= 71.2% |
+Epoch  56 | Train: loss=0.022, acc= 99.6% | time=302.0ms | Valid: loss=1.299, acc= 71.6% |
+Epoch  57 | Train: loss=0.018, acc= 99.8% | time=302.2ms | Valid: loss=1.279, acc= 71.2% |
+Epoch  58 | Train: loss=0.021, acc= 99.7% | time=302.1ms | Valid: loss=1.216, acc= 71.6% |
+Epoch  59 | Train: loss=0.021, acc= 99.7% | time=301.9ms | Valid: loss=1.235, acc= 72.4% | lr=3.9e-04
+Epoch  60 | Train: loss=0.019, acc= 99.6% | time=301.5ms | Valid: loss=1.229, acc= 71.2% |
+Epoch  61 | Train: loss=0.023, acc= 99.7% | time=301.5ms | Valid: loss=1.247, acc= 72.4% |
+Epoch  62 | Train: loss=0.020, acc= 99.7% | time=301.9ms | Valid: loss=1.197, acc= 73.6% |
+Epoch  63 | Train: loss=0.019, acc= 99.8% | time=301.8ms | Valid: loss=1.228, acc= 72.4% |
+Epoch  64 | Train: loss=0.019, acc= 99.7% | time=301.3ms | Valid: loss=1.292, acc= 72.8% |
+Epoch  65 | Train: loss=0.022, acc= 99.6% | time=301.4ms | Valid: loss=1.243, acc= 73.6% | lr=2.0e-04
+Epoch  66 | Train: loss=0.017, acc= 99.8% | time=301.6ms | Valid: loss=1.264, acc= 70.4% |
+Epoch  67 | Train: loss=0.018, acc= 99.7% | time=301.8ms | Valid: loss=1.273, acc= 72.4% |
+Epoch  68 | Train: loss=0.020, acc= 99.6% | time=301.7ms | Valid: loss=1.233, acc= 69.2% |
+Epoch  69 | Train: loss=0.018, acc= 99.7% | time=301.3ms | Valid: loss=1.272, acc= 71.2% |
+Epoch  70 | Train: loss=0.019, acc= 99.7% | time=301.7ms | Valid: loss=1.256, acc= 72.0% |
+Epoch  71 | Train: loss=0.020, acc= 99.7% | time=301.6ms | Valid: loss=1.300, acc= 70.8% | lr=9.8e-05
+Epoch  72 | Train: loss=0.020, acc= 99.6% | time=301.8ms | Valid: loss=1.244, acc= 70.8% |
+Epoch  73 | Train: loss=0.020, acc= 99.6% | time=302.2ms | Valid: loss=1.250, acc= 71.6% |
+Epoch  74 | Train: loss=0.017, acc= 99.8% | time=301.9ms | Valid: loss=1.290, acc= 72.8% |
+Epoch  75 | Train: loss=0.021, acc= 99.7% | time=301.9ms | Valid: loss=1.270, acc= 72.0% |
+Epoch  76 | Train: loss=0.021, acc= 99.6% | time=302.2ms | Valid: loss=1.280, acc= 70.0% |
+Epoch  77 | Train: loss=0.021, acc= 99.6% | time=301.9ms | Valid: loss=1.314, acc= 71.6% | lr=4.9e-05
+Test: loss=1.215 , acc= 72.2%
+#####len(mat_list)#####len(grad_list) 5 5
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (48, 20184)
+Layer 2 : (576, 14400)
+Layer 3 : (512, 2500)
+Layer 4 : (1024, 125)
+Layer 5 : (2048, 125)
+------------------------------
+threshold_list:  [0.973 0.973 0.973 0.973 0.973]
+Gradient Matrix torch.Size([64, 48])
+Matrix waiting to be decomposed torch.Size([128, 48])
+Rank of Matrix： tensor(0, device='cuda:0')
+space_list[i] torch.Size([48, 0])
+Revised space_list[i] torch.Size([48, 5])
+Gradient Matrix torch.Size([128, 576])
+Matrix waiting to be decomposed torch.Size([256, 576])
+Rank of Matrix： tensor(36, device='cuda:0')
+space_list[i] torch.Size([576, 36])
+Revised space_list[i] torch.Size([576, 103])
+Gradient Matrix torch.Size([256, 512])
+Matrix waiting to be decomposed torch.Size([512, 512])
+Rank of Matrix： tensor(98, device='cuda:0')
+space_list[i] torch.Size([512, 98])
+Revised space_list[i] torch.Size([512, 175])
+Gradient Matrix torch.Size([2048, 1024])
+Matrix waiting to be decomposed torch.Size([4096, 1024])
+Rank of Matrix： tensor(0, device='cuda:0')
+space_list[i] torch.Size([1024, 0])
+Revised space_list[i] torch.Size([1024, 113])
+Gradient Matrix torch.Size([2048, 2048])
+Matrix waiting to be decomposed torch.Size([4096, 2048])
+Rank of Matrix： tensor(0, device='cuda:0')
+space_list[i] torch.Size([2048, 0])
+Revised space_list[i] torch.Size([2048, 148])
+----------------------------------------
+Common Null Space Matrix
+----------------------------------------
+Layer 1 : 48 * 5
+Layer 2 : 576 * 103
+Layer 3 : 512 * 175
+Layer 4 : 1024 * 113
+Layer 5 : 2048 * 148
+----------------------------------------
+Current memory usage: RSS=7290.07MB, VMS=17554.23MB
+Accuracies =
+	 77.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 75.1%  72.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+****************************************************************************************************
+Task  2 (cifar100-2)
+****************************************************************************************************
+----------------------------------------
+Task ID :2 | Learning Rate : 0.05
+----------------------------------------
+Epoch   1 | Train: loss=1.165, acc= 62.5% | time=310.3ms | Valid: loss=1.435, acc= 57.6% | *
+Epoch   2 | Train: loss=0.865, acc= 71.6% | time=303.4ms | Valid: loss=1.273, acc= 61.6% | *
+Epoch   3 | Train: loss=0.763, acc= 74.6% | time=303.5ms | Valid: loss=1.280, acc= 60.4% |
+Epoch   4 | Train: loss=0.734, acc= 76.6% | time=303.3ms | Valid: loss=1.311, acc= 60.8% |
+Epoch   5 | Train: loss=0.640, acc= 79.5% | time=303.6ms | Valid: loss=1.264, acc= 65.2% | *
+Epoch   6 | Train: loss=0.581, acc= 81.0% | time=303.8ms | Valid: loss=1.285, acc= 68.0% |
+Epoch   7 | Train: loss=0.576, acc= 81.6% | time=303.3ms | Valid: loss=1.183, acc= 69.6% | *
+Epoch   8 | Train: loss=0.344, acc= 88.5% | time=303.4ms | Valid: loss=1.022, acc= 70.0% | *
+Epoch   9 | Train: loss=0.377, acc= 86.8% | time=303.5ms | Valid: loss=1.100, acc= 72.4% |
+Epoch  10 | Train: loss=0.369, acc= 87.8% | time=303.4ms | Valid: loss=1.231, acc= 68.0% |
+Epoch  11 | Train: loss=0.250, acc= 91.6% | time=303.3ms | Valid: loss=0.964, acc= 76.0% | *
+Epoch  12 | Train: loss=0.239, acc= 91.8% | time=303.5ms | Valid: loss=0.970, acc= 74.0% |
+Epoch  13 | Train: loss=0.341, acc= 87.9% | time=302.7ms | Valid: loss=1.283, acc= 65.6% |
+Epoch  14 | Train: loss=0.235, acc= 91.9% | time=302.9ms | Valid: loss=1.070, acc= 74.8% |
+Epoch  15 | Train: loss=0.150, acc= 94.7% | time=302.9ms | Valid: loss=0.973, acc= 72.8% |
+Epoch  16 | Train: loss=0.182, acc= 94.0% | time=303.1ms | Valid: loss=1.065, acc= 76.4% |
+Epoch  17 | Train: loss=0.174, acc= 93.9% | time=303.9ms | Valid: loss=1.215, acc= 71.2% | lr=2.5e-02
+Epoch  18 | Train: loss=0.097, acc= 96.9% | time=303.1ms | Valid: loss=1.022, acc= 72.4% |
+Epoch  19 | Train: loss=0.080, acc= 97.5% | time=303.0ms | Valid: loss=1.017, acc= 73.2% |
+Epoch  20 | Train: loss=0.068, acc= 98.1% | time=303.0ms | Valid: loss=0.951, acc= 74.8% | *
+Epoch  21 | Train: loss=0.069, acc= 97.9% | time=303.2ms | Valid: loss=1.058, acc= 73.6% |
+Epoch  22 | Train: loss=0.065, acc= 98.0% | time=303.9ms | Valid: loss=1.085, acc= 74.0% |
+Epoch  23 | Train: loss=0.084, acc= 97.2% | time=303.5ms | Valid: loss=1.083, acc= 74.4% |
+Epoch  24 | Train: loss=0.057, acc= 98.2% | time=303.4ms | Valid: loss=1.035, acc= 75.2% |
+Epoch  25 | Train: loss=0.049, acc= 98.5% | time=303.4ms | Valid: loss=1.040, acc= 76.0% |
+Epoch  26 | Train: loss=0.045, acc= 98.6% | time=303.3ms | Valid: loss=1.104, acc= 73.6% | lr=1.3e-02
+Epoch  27 | Train: loss=0.042, acc= 98.7% | time=303.5ms | Valid: loss=0.991, acc= 74.4% |
+Epoch  28 | Train: loss=0.037, acc= 99.1% | time=303.1ms | Valid: loss=1.016, acc= 74.4% |
+Epoch  29 | Train: loss=0.030, acc= 99.3% | time=302.6ms | Valid: loss=0.965, acc= 75.2% |
+Epoch  30 | Train: loss=0.038, acc= 99.0% | time=302.3ms | Valid: loss=1.068, acc= 74.4% |
+Epoch  31 | Train: loss=0.035, acc= 99.2% | time=304.2ms | Valid: loss=1.081, acc= 72.4% |
+Epoch  32 | Train: loss=0.030, acc= 99.2% | time=302.4ms | Valid: loss=1.045, acc= 74.4% | lr=6.3e-03
+Epoch  33 | Train: loss=0.029, acc= 99.3% | time=302.4ms | Valid: loss=1.003, acc= 76.4% |
+Epoch  34 | Train: loss=0.030, acc= 99.2% | time=302.6ms | Valid: loss=1.000, acc= 77.2% |
+Epoch  35 | Train: loss=0.026, acc= 99.3% | time=302.7ms | Valid: loss=0.997, acc= 78.0% |
+Epoch  36 | Train: loss=0.026, acc= 99.2% | time=303.7ms | Valid: loss=0.973, acc= 76.8% |
+Epoch  37 | Train: loss=0.030, acc= 99.3% | time=302.5ms | Valid: loss=1.054, acc= 76.0% |
+Epoch  38 | Train: loss=0.026, acc= 99.4% | time=302.4ms | Valid: loss=1.051, acc= 75.2% | lr=3.1e-03
+Epoch  39 | Train: loss=0.023, acc= 99.5% | time=303.0ms | Valid: loss=0.973, acc= 75.2% |
+Epoch  40 | Train: loss=0.024, acc= 99.5% | time=302.0ms | Valid: loss=0.997, acc= 75.6% |
+Epoch  41 | Train: loss=0.025, acc= 99.5% | time=314.6ms | Valid: loss=1.097, acc= 75.2% |
+Epoch  42 | Train: loss=0.022, acc= 99.6% | time=302.2ms | Valid: loss=1.065, acc= 76.4% |
+Epoch  43 | Train: loss=0.023, acc= 99.5% | time=302.7ms | Valid: loss=1.075, acc= 74.4% |
+Epoch  44 | Train: loss=0.023, acc= 99.5% | time=302.4ms | Valid: loss=1.045, acc= 75.2% | lr=1.6e-03
+Epoch  45 | Train: loss=0.021, acc= 99.6% | time=302.6ms | Valid: loss=1.019, acc= 76.8% |
+Epoch  46 | Train: loss=0.024, acc= 99.5% | time=302.5ms | Valid: loss=1.063, acc= 73.2% |
+Epoch  47 | Train: loss=0.023, acc= 99.5% | time=302.9ms | Valid: loss=0.980, acc= 74.8% |
+Epoch  48 | Train: loss=0.023, acc= 99.4% | time=302.2ms | Valid: loss=1.030, acc= 75.2% |
+Epoch  49 | Train: loss=0.026, acc= 99.3% | time=302.7ms | Valid: loss=0.994, acc= 76.4% |
+Epoch  50 | Train: loss=0.024, acc= 99.5% | time=302.2ms | Valid: loss=1.043, acc= 76.4% | lr=7.8e-04
+Epoch  51 | Train: loss=0.023, acc= 99.6% | time=302.6ms | Valid: loss=0.998, acc= 77.6% |
+Epoch  52 | Train: loss=0.024, acc= 99.3% | time=303.2ms | Valid: loss=0.973, acc= 74.4% |
+Epoch  53 | Train: loss=0.023, acc= 99.4% | time=302.8ms | Valid: loss=0.974, acc= 77.6% |
+Epoch  54 | Train: loss=0.021, acc= 99.5% | time=302.7ms | Valid: loss=1.051, acc= 77.6% |
+Epoch  55 | Train: loss=0.021, acc= 99.6% | time=302.7ms | Valid: loss=1.102, acc= 75.2% |
+Epoch  56 | Train: loss=0.021, acc= 99.5% | time=302.8ms | Valid: loss=0.964, acc= 76.8% | lr=3.9e-04
+Epoch  57 | Train: loss=0.023, acc= 99.4% | time=302.9ms | Valid: loss=1.116, acc= 75.2% |
+Epoch  58 | Train: loss=0.022, acc= 99.5% | time=302.2ms | Valid: loss=1.082, acc= 74.8% |
+Epoch  59 | Train: loss=0.024, acc= 99.4% | time=302.5ms | Valid: loss=0.932, acc= 76.0% | *
+Epoch  60 | Train: loss=0.024, acc= 99.4% | time=302.1ms | Valid: loss=0.993, acc= 76.8% |
+Epoch  61 | Train: loss=0.023, acc= 99.5% | time=302.5ms | Valid: loss=0.993, acc= 77.6% |
+Epoch  62 | Train: loss=0.020, acc= 99.6% | time=302.0ms | Valid: loss=1.034, acc= 77.2% |
+Epoch  63 | Train: loss=0.024, acc= 99.5% | time=301.9ms | Valid: loss=1.028, acc= 77.6% |
+Epoch  64 | Train: loss=0.023, acc= 99.5% | time=301.8ms | Valid: loss=0.984, acc= 75.6% |
+Epoch  65 | Train: loss=0.023, acc= 99.5% | time=302.1ms | Valid: loss=1.018, acc= 76.0% | lr=2.0e-04
+Epoch  66 | Train: loss=0.020, acc= 99.6% | time=301.7ms | Valid: loss=1.071, acc= 77.2% |
+Epoch  67 | Train: loss=0.023, acc= 99.5% | time=301.8ms | Valid: loss=0.993, acc= 77.2% |
+Epoch  68 | Train: loss=0.020, acc= 99.6% | time=302.3ms | Valid: loss=1.029, acc= 77.2% |
+Epoch  69 | Train: loss=0.022, acc= 99.3% | time=301.9ms | Valid: loss=0.994, acc= 78.0% |
+Epoch  70 | Train: loss=0.022, acc= 99.4% | time=302.3ms | Valid: loss=1.048, acc= 75.2% |
+Epoch  71 | Train: loss=0.021, acc= 99.5% | time=302.1ms | Valid: loss=1.027, acc= 77.2% | lr=9.8e-05
+Epoch  72 | Train: loss=0.024, acc= 99.2% | time=302.3ms | Valid: loss=1.052, acc= 76.0% |
+Epoch  73 | Train: loss=0.023, acc= 99.4% | time=302.1ms | Valid: loss=0.986, acc= 76.8% |
+Epoch  74 | Train: loss=0.021, acc= 99.5% | time=302.2ms | Valid: loss=1.000, acc= 76.4% |
+Epoch  75 | Train: loss=0.021, acc= 99.6% | time=302.3ms | Valid: loss=1.088, acc= 72.4% |
+Epoch  76 | Train: loss=0.021, acc= 99.6% | time=302.3ms | Valid: loss=0.987, acc= 77.6% |
+Epoch  77 | Train: loss=0.026, acc= 99.3% | time=301.9ms | Valid: loss=1.016, acc= 74.8% | lr=4.9e-05
+Test: loss=0.987 , acc= 77.9%
+#####len(mat_list)#####len(grad_list) 5 5
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (48, 20184)
+Layer 2 : (576, 14400)
+Layer 3 : (512, 2500)
+Layer 4 : (1024, 125)
+Layer 5 : (2048, 125)
+------------------------------
+threshold_list:  [0.976 0.976 0.976 0.976 0.976]
+Gradient Matrix torch.Size([64, 48])
+Matrix waiting to be decomposed torch.Size([192, 48])
+Rank of Matrix： tensor(0, device='cuda:0')
+space_list[i] torch.Size([48, 0])
+Revised space_list[i] torch.Size([48, 4])
+Gradient Matrix torch.Size([128, 576])
+Matrix waiting to be decomposed torch.Size([384, 576])
+Rank of Matrix： tensor(384, device='cuda:0')
+space_list[i] torch.Size([576, 384])
+Revised space_list[i] torch.Size([576, 172])
+Gradient Matrix torch.Size([256, 512])
+Matrix waiting to be decomposed torch.Size([768, 512])
+Rank of Matrix： tensor(512, device='cuda:0')
+space_list[i] torch.Size([512, 512])
+Revised space_list[i] torch.Size([512, 199])
+Gradient Matrix torch.Size([2048, 1024])
+Matrix waiting to be decomposed torch.Size([6144, 1024])
+Rank of Matrix： tensor(0, device='cuda:0')
+space_list[i] torch.Size([1024, 0])
+Revised space_list[i] torch.Size([1024, 144])
+Gradient Matrix torch.Size([2048, 2048])
+Matrix waiting to be decomposed torch.Size([6144, 2048])
+Rank of Matrix： tensor(0, device='cuda:0')
+space_list[i] torch.Size([2048, 0])
+Revised space_list[i] torch.Size([2048, 198])
+----------------------------------------
+Common Null Space Matrix
+----------------------------------------
+Layer 1 : 48 * 4
+Layer 2 : 576 * 172
+Layer 3 : 512 * 199
+Layer 4 : 1024 * 144
+Layer 5 : 2048 * 198
+----------------------------------------
+Current memory usage: RSS=7301.22MB, VMS=17724.00MB
+Accuracies =
+	 77.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 75.1%  72.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 72.1%  66.7%  77.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+****************************************************************************************************
+Task  3 (cifar100-3)
+****************************************************************************************************
+----------------------------------------
+Task ID :3 | Learning Rate : 0.05
+----------------------------------------
+Epoch   1 | Train: loss=1.365, acc= 58.7% | time=310.5ms | Valid: loss=1.294, acc= 60.0% | *
+Epoch   2 | Train: loss=1.192, acc= 61.9% | time=303.2ms | Valid: loss=1.302, acc= 59.6% |
+Epoch   3 | Train: loss=0.971, acc= 69.5% | time=303.6ms | Valid: loss=1.055, acc= 65.6% | *
+Epoch   4 | Train: loss=1.378, acc= 60.5% | time=302.9ms | Valid: loss=1.539, acc= 59.6% |
+Epoch   5 | Train: loss=0.935, acc= 69.8% | time=302.7ms | Valid: loss=1.092, acc= 68.4% |
+Epoch   6 | Train: loss=0.660, acc= 77.9% | time=304.1ms | Valid: loss=0.882, acc= 72.8% | *
+Epoch   7 | Train: loss=0.720, acc= 75.9% | time=302.8ms | Valid: loss=1.131, acc= 69.6% |
+Epoch   8 | Train: loss=0.574, acc= 80.9% | time=301.9ms | Valid: loss=1.079, acc= 72.0% |
+Epoch   9 | Train: loss=0.455, acc= 84.9% | time=302.1ms | Valid: loss=0.945, acc= 72.0% |
+Epoch  10 | Train: loss=0.574, acc= 80.5% | time=301.8ms | Valid: loss=1.088, acc= 70.0% |
+Epoch  11 | Train: loss=0.391, acc= 85.8% | time=301.7ms | Valid: loss=0.914, acc= 71.2% |
+Epoch  12 | Train: loss=0.278, acc= 90.6% | time=302.5ms | Valid: loss=0.879, acc= 73.2% | *
+Epoch  13 | Train: loss=0.364, acc= 87.2% | time=304.5ms | Valid: loss=0.939, acc= 74.0% |
+Epoch  14 | Train: loss=0.350, acc= 88.2% | time=301.9ms | Valid: loss=1.198, acc= 70.8% |
+Epoch  15 | Train: loss=0.360, acc= 88.0% | time=302.2ms | Valid: loss=1.136, acc= 72.4% |
+Epoch  16 | Train: loss=0.231, acc= 92.2% | time=301.9ms | Valid: loss=1.002, acc= 74.4% |
+Epoch  17 | Train: loss=0.151, acc= 94.8% | time=301.7ms | Valid: loss=0.887, acc= 76.0% |
+Epoch  18 | Train: loss=0.205, acc= 93.1% | time=301.8ms | Valid: loss=0.965, acc= 74.0% | lr=2.5e-02
+Epoch  19 | Train: loss=0.119, acc= 96.2% | time=303.4ms | Valid: loss=0.853, acc= 75.6% | *
+Epoch  20 | Train: loss=0.101, acc= 96.8% | time=302.3ms | Valid: loss=0.874, acc= 76.0% |
+Epoch  21 | Train: loss=0.104, acc= 96.5% | time=302.1ms | Valid: loss=0.802, acc= 74.8% | *
+Epoch  22 | Train: loss=0.086, acc= 97.5% | time=301.9ms | Valid: loss=0.861, acc= 76.4% |
+Epoch  23 | Train: loss=0.070, acc= 97.9% | time=301.8ms | Valid: loss=0.777, acc= 78.8% | *
+Epoch  24 | Train: loss=0.066, acc= 98.1% | time=302.2ms | Valid: loss=0.882, acc= 77.6% |
+Epoch  25 | Train: loss=0.064, acc= 98.2% | time=302.3ms | Valid: loss=0.892, acc= 76.0% |
+Epoch  26 | Train: loss=0.061, acc= 98.2% | time=301.9ms | Valid: loss=0.884, acc= 79.2% |
+Epoch  27 | Train: loss=0.059, acc= 98.3% | time=301.8ms | Valid: loss=0.881, acc= 77.6% |
+Epoch  28 | Train: loss=0.050, acc= 98.7% | time=302.1ms | Valid: loss=0.768, acc= 80.8% | *
+Epoch  29 | Train: loss=0.059, acc= 98.3% | time=301.4ms | Valid: loss=0.909, acc= 74.8% |
+Epoch  30 | Train: loss=0.044, acc= 98.8% | time=303.4ms | Valid: loss=0.800, acc= 80.4% |
+Epoch  31 | Train: loss=0.040, acc= 98.9% | time=301.5ms | Valid: loss=0.978, acc= 75.2% |
+Epoch  32 | Train: loss=0.036, acc= 99.2% | time=301.7ms | Valid: loss=0.833, acc= 78.4% |
+Epoch  33 | Train: loss=0.034, acc= 99.2% | time=302.0ms | Valid: loss=0.847, acc= 78.8% |
+Epoch  34 | Train: loss=0.029, acc= 99.2% | time=302.0ms | Valid: loss=0.770, acc= 78.0% | lr=1.3e-02
+Epoch  35 | Train: loss=0.029, acc= 99.2% | time=303.5ms | Valid: loss=0.828, acc= 78.4% |
+Epoch  36 | Train: loss=0.027, acc= 99.4% | time=301.9ms | Valid: loss=0.840, acc= 80.4% |
+Epoch  37 | Train: loss=0.029, acc= 99.3% | time=302.0ms | Valid: loss=0.917, acc= 77.2% |
+Epoch  38 | Train: loss=0.027, acc= 99.5% | time=301.9ms | Valid: loss=0.865, acc= 78.0% |
+Epoch  39 | Train: loss=0.025, acc= 99.4% | time=302.5ms | Valid: loss=0.887, acc= 78.8% |
+Epoch  40 | Train: loss=0.023, acc= 99.5% | time=303.6ms | Valid: loss=0.927, acc= 77.2% | lr=6.3e-03
+Epoch  41 | Train: loss=0.022, acc= 99.5% | time=302.2ms | Valid: loss=0.860, acc= 77.2% |
+Epoch  42 | Train: loss=0.021, acc= 99.5% | time=301.9ms | Valid: loss=0.940, acc= 77.2% |
+Epoch  43 | Train: loss=0.021, acc= 99.5% | time=301.8ms | Valid: loss=0.837, acc= 78.4% |
+Epoch  44 | Train: loss=0.022, acc= 99.5% | time=302.0ms | Valid: loss=0.932, acc= 79.6% |
+Epoch  45 | Train: loss=0.021, acc= 99.6% | time=309.9ms | Valid: loss=0.884, acc= 77.2% |
+Epoch  46 | Train: loss=0.021, acc= 99.5% | time=301.8ms | Valid: loss=0.887, acc= 76.4% | lr=3.1e-03
+Epoch  47 | Train: loss=0.021, acc= 99.6% | time=302.1ms | Valid: loss=0.890, acc= 80.0% |
+Epoch  48 | Train: loss=0.019, acc= 99.7% | time=301.8ms | Valid: loss=0.817, acc= 78.0% |
+Epoch  49 | Train: loss=0.019, acc= 99.6% | time=302.1ms | Valid: loss=0.859, acc= 78.0% |
+Epoch  50 | Train: loss=0.018, acc= 99.7% | time=302.1ms | Valid: loss=0.966, acc= 74.8% |
+Epoch  51 | Train: loss=0.022, acc= 99.5% | time=309.9ms | Valid: loss=0.849, acc= 79.6% |
+Epoch  52 | Train: loss=0.020, acc= 99.6% | time=301.8ms | Valid: loss=0.918, acc= 79.6% | lr=1.6e-03
+Epoch  53 | Train: loss=0.020, acc= 99.6% | time=301.9ms | Valid: loss=0.855, acc= 80.8% |
+Epoch  54 | Train: loss=0.020, acc= 99.5% | time=301.4ms | Valid: loss=0.849, acc= 80.8% |
+Epoch  55 | Train: loss=0.017, acc= 99.7% | time=301.8ms | Valid: loss=0.853, acc= 78.4% |
+Epoch  56 | Train: loss=0.018, acc= 99.6% | time=302.3ms | Valid: loss=0.842, acc= 78.4% |
+Epoch  57 | Train: loss=0.017, acc= 99.8% | time=301.9ms | Valid: loss=0.848, acc= 78.0% |
+Epoch  58 | Train: loss=0.018, acc= 99.7% | time=301.7ms | Valid: loss=0.868, acc= 77.6% | lr=7.8e-04
+Epoch  59 | Train: loss=0.019, acc= 99.6% | time=301.8ms | Valid: loss=0.897, acc= 77.2% |
+Epoch  60 | Train: loss=0.018, acc= 99.8% | time=302.0ms | Valid: loss=0.794, acc= 80.4% |
+Epoch  61 | Train: loss=0.019, acc= 99.6% | time=301.9ms | Valid: loss=0.874, acc= 78.0% |
+Epoch  62 | Train: loss=0.016, acc= 99.7% | time=302.4ms | Valid: loss=0.948, acc= 74.8% |
+Epoch  63 | Train: loss=0.018, acc= 99.6% | time=302.1ms | Valid: loss=0.890, acc= 79.6% |
+Epoch  64 | Train: loss=0.018, acc= 99.6% | time=301.9ms | Valid: loss=0.837, acc= 78.4% | lr=3.9e-04
+Epoch  65 | Train: loss=0.017, acc= 99.6% | time=302.2ms | Valid: loss=0.888, acc= 78.0% |
+Epoch  66 | Train: loss=0.017, acc= 99.7% | time=302.1ms | Valid: loss=0.947, acc= 77.6% |
+Epoch  67 | Train: loss=0.016, acc= 99.8% | time=303.2ms | Valid: loss=0.865, acc= 77.2% |
+Epoch  68 | Train: loss=0.017, acc= 99.6% | time=302.0ms | Valid: loss=0.851, acc= 80.8% |
+Epoch  69 | Train: loss=0.018, acc= 99.6% | time=302.2ms | Valid: loss=0.886, acc= 77.2% |
+Epoch  70 | Train: loss=0.018, acc= 99.6% | time=302.1ms | Valid: loss=0.862, acc= 77.2% | lr=2.0e-04
+Epoch  71 | Train: loss=0.017, acc= 99.7% | time=302.0ms | Valid: loss=0.877, acc= 77.6% |
+Epoch  72 | Train: loss=0.017, acc= 99.7% | time=302.1ms | Valid: loss=0.862, acc= 78.8% |
+Epoch  73 | Train: loss=0.018, acc= 99.7% | time=301.9ms | Valid: loss=0.918, acc= 76.4% |
+Epoch  74 | Train: loss=0.018, acc= 99.6% | time=301.5ms | Valid: loss=0.912, acc= 78.0% |
+Epoch  75 | Train: loss=0.017, acc= 99.7% | time=301.3ms | Valid: loss=0.871, acc= 78.8% |
+Epoch  76 | Train: loss=0.018, acc= 99.6% | time=301.3ms | Valid: loss=0.939, acc= 76.4% | lr=9.8e-05
+Epoch  77 | Train: loss=0.018, acc= 99.6% | time=301.6ms | Valid: loss=0.868, acc= 79.6% |
+Epoch  78 | Train: loss=0.016, acc= 99.7% | time=302.0ms | Valid: loss=0.892, acc= 79.6% |
+Epoch  79 | Train: loss=0.015, acc= 99.7% | time=302.1ms | Valid: loss=0.904, acc= 78.0% |
+Epoch  80 | Train: loss=0.017, acc= 99.7% | time=301.7ms | Valid: loss=0.891, acc= 75.6% |
+Epoch  81 | Train: loss=0.018, acc= 99.7% | time=301.6ms | Valid: loss=0.891, acc= 76.8% |
+Epoch  82 | Train: loss=0.016, acc= 99.7% | time=302.2ms | Valid: loss=0.895, acc= 79.6% | lr=4.9e-05
+Test: loss=0.981 , acc= 75.8%
+#####len(mat_list)#####len(grad_list) 5 5
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (48, 20184)
+Layer 2 : (576, 14400)
+Layer 3 : (512, 2500)
+Layer 4 : (1024, 125)
+Layer 5 : (2048, 125)
+------------------------------
+threshold_list:  [0.979 0.979 0.979 0.979 0.979]
+Gradient Matrix torch.Size([64, 48])
+Matrix waiting to be decomposed torch.Size([256, 48])
+Rank of Matrix： tensor(1, device='cuda:0')
+space_list[i] torch.Size([48, 1])
+Revised space_list[i] torch.Size([48, 4])
+Gradient Matrix torch.Size([128, 576])
+Matrix waiting to be decomposed torch.Size([512, 576])
+Rank of Matrix： tensor(512, device='cuda:0')
+space_list[i] torch.Size([576, 512])
+Revised space_list[i] torch.Size([576, 165])
+Gradient Matrix torch.Size([256, 512])
+Matrix waiting to be decomposed torch.Size([1024, 512])
+Rank of Matrix： tensor(512, device='cuda:0')
+space_list[i] torch.Size([512, 512])
+Revised space_list[i] torch.Size([512, 174])
+Gradient Matrix torch.Size([2048, 1024])
+Matrix waiting to be decomposed torch.Size([8192, 1024])
+Rank of Matrix： tensor(1, device='cuda:0')
+space_list[i] torch.Size([1024, 1])
+Revised space_list[i] torch.Size([1024, 168])
+Gradient Matrix torch.Size([2048, 2048])
+Matrix waiting to be decomposed torch.Size([8192, 2048])
+Rank of Matrix： tensor(1, device='cuda:0')
+space_list[i] torch.Size([2048, 1])
+Revised space_list[i] torch.Size([2048, 242])
+----------------------------------------
+Common Null Space Matrix
+----------------------------------------
+Layer 1 : 48 * 4
+Layer 2 : 576 * 165
+Layer 3 : 512 * 174
+Layer 4 : 1024 * 168
+Layer 5 : 2048 * 242
+----------------------------------------
+Current memory usage: RSS=7311.30MB, VMS=17829.77MB
+Accuracies =
+	 77.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 75.1%  72.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 72.1%  66.7%  77.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 71.2%  65.4%  74.3%  75.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+****************************************************************************************************
+Task  4 (cifar100-4)
+****************************************************************************************************
+----------------------------------------
+Task ID :4 | Learning Rate : 0.05
+----------------------------------------
+Epoch   1 | Train: loss=1.317, acc= 58.1% | time=310.3ms | Valid: loss=1.588, acc= 52.0% | *
+Epoch   2 | Train: loss=0.778, acc= 74.4% | time=303.5ms | Valid: loss=1.068, acc= 70.4% | *
+Epoch   3 | Train: loss=0.734, acc= 75.7% | time=305.2ms | Valid: loss=1.180, acc= 65.2% |
+Epoch   4 | Train: loss=1.344, acc= 60.4% | time=303.3ms | Valid: loss=1.694, acc= 54.4% |
+Epoch   5 | Train: loss=0.675, acc= 77.5% | time=303.6ms | Valid: loss=1.296, acc= 62.8% |
+Epoch   6 | Train: loss=0.485, acc= 83.3% | time=305.0ms | Valid: loss=1.105, acc= 74.0% |
+Epoch   7 | Train: loss=0.537, acc= 81.9% | time=303.3ms | Valid: loss=1.218, acc= 68.0% |
+Epoch   8 | Train: loss=0.347, acc= 88.1% | time=303.6ms | Valid: loss=1.100, acc= 70.8% | lr=2.5e-02
+Epoch   9 | Train: loss=0.306, acc= 89.9% | time=304.5ms | Valid: loss=1.040, acc= 72.4% | *
+Epoch  10 | Train: loss=0.252, acc= 91.8% | time=303.3ms | Valid: loss=0.972, acc= 75.2% | *
+Epoch  11 | Train: loss=0.260, acc= 91.0% | time=303.2ms | Valid: loss=1.014, acc= 74.0% |
+Epoch  12 | Train: loss=0.235, acc= 91.9% | time=303.1ms | Valid: loss=0.972, acc= 76.0% | *
+Epoch  13 | Train: loss=0.207, acc= 93.1% | time=303.1ms | Valid: loss=0.923, acc= 76.0% | *
+Epoch  14 | Train: loss=0.222, acc= 92.4% | time=303.4ms | Valid: loss=0.932, acc= 78.4% |
+Epoch  15 | Train: loss=0.182, acc= 93.9% | time=303.5ms | Valid: loss=1.029, acc= 73.2% |
+Epoch  16 | Train: loss=0.171, acc= 94.3% | time=303.2ms | Valid: loss=0.973, acc= 75.6% |
+Epoch  17 | Train: loss=0.161, acc= 95.0% | time=302.7ms | Valid: loss=0.927, acc= 75.2% |
+Epoch  18 | Train: loss=0.152, acc= 95.1% | time=302.6ms | Valid: loss=0.911, acc= 74.8% | *
+Epoch  19 | Train: loss=0.154, acc= 94.9% | time=304.3ms | Valid: loss=0.944, acc= 77.2% |
+Epoch  20 | Train: loss=0.143, acc= 95.1% | time=302.7ms | Valid: loss=1.017, acc= 77.6% |
+Epoch  21 | Train: loss=0.118, acc= 96.3% | time=303.0ms | Valid: loss=0.934, acc= 78.4% |
+Epoch  22 | Train: loss=0.106, acc= 96.9% | time=303.7ms | Valid: loss=0.945, acc= 77.2% |
+Epoch  23 | Train: loss=0.102, acc= 97.0% | time=302.2ms | Valid: loss=0.968, acc= 76.0% |
+Epoch  24 | Train: loss=0.104, acc= 96.8% | time=302.3ms | Valid: loss=0.980, acc= 77.2% | lr=1.3e-02
+Epoch  25 | Train: loss=0.084, acc= 97.6% | time=304.7ms | Valid: loss=0.943, acc= 78.8% |
+Epoch  26 | Train: loss=0.081, acc= 97.8% | time=302.6ms | Valid: loss=0.930, acc= 78.0% |
+Epoch  27 | Train: loss=0.083, acc= 97.7% | time=302.7ms | Valid: loss=0.926, acc= 76.8% |
+Epoch  28 | Train: loss=0.079, acc= 97.6% | time=302.6ms | Valid: loss=1.020, acc= 78.4% |
+Epoch  29 | Train: loss=0.070, acc= 98.2% | time=303.4ms | Valid: loss=0.980, acc= 79.2% |
+Epoch  30 | Train: loss=0.074, acc= 97.7% | time=303.2ms | Valid: loss=1.008, acc= 77.6% | lr=6.3e-03
+Epoch  31 | Train: loss=0.066, acc= 98.1% | time=303.4ms | Valid: loss=0.972, acc= 78.4% |
+Epoch  32 | Train: loss=0.064, acc= 98.1% | time=303.7ms | Valid: loss=0.954, acc= 80.8% |
+Epoch  33 | Train: loss=0.062, acc= 98.3% | time=303.2ms | Valid: loss=1.021, acc= 78.0% |
+Epoch  34 | Train: loss=0.061, acc= 98.4% | time=303.2ms | Valid: loss=0.957, acc= 77.2% |
+Epoch  35 | Train: loss=0.063, acc= 98.3% | time=303.5ms | Valid: loss=0.960, acc= 79.2% |
+Epoch  36 | Train: loss=0.062, acc= 98.3% | time=303.2ms | Valid: loss=0.907, acc= 76.4% | *
+Epoch  37 | Train: loss=0.061, acc= 98.3% | time=303.5ms | Valid: loss=1.020, acc= 79.6% |
+Epoch  38 | Train: loss=0.061, acc= 98.4% | time=303.0ms | Valid: loss=0.987, acc= 77.2% |
+Epoch  39 | Train: loss=0.060, acc= 98.4% | time=302.7ms | Valid: loss=0.962, acc= 78.8% |
+Epoch  40 | Train: loss=0.055, acc= 98.6% | time=315.0ms | Valid: loss=0.993, acc= 76.4% |
+Epoch  41 | Train: loss=0.054, acc= 98.4% | time=303.3ms | Valid: loss=1.046, acc= 76.4% |
+Epoch  42 | Train: loss=0.056, acc= 98.5% | time=304.2ms | Valid: loss=1.042, acc= 77.6% | lr=3.1e-03
+Epoch  43 | Train: loss=0.052, acc= 98.6% | time=304.3ms | Valid: loss=0.969, acc= 78.0% |
+Epoch  44 | Train: loss=0.051, acc= 98.6% | time=304.4ms | Valid: loss=1.035, acc= 78.0% |
+Epoch  45 | Train: loss=0.050, acc= 98.7% | time=306.3ms | Valid: loss=0.995, acc= 79.2% |
+Epoch  46 | Train: loss=0.053, acc= 98.6% | time=304.3ms | Valid: loss=1.041, acc= 77.6% |
+Epoch  47 | Train: loss=0.049, acc= 98.8% | time=304.4ms | Valid: loss=0.986, acc= 79.6% |
+Epoch  48 | Train: loss=0.050, acc= 98.8% | time=304.6ms | Valid: loss=0.952, acc= 79.2% | lr=1.6e-03
+Epoch  49 | Train: loss=0.046, acc= 99.0% | time=303.6ms | Valid: loss=0.948, acc= 78.8% |
+Epoch  50 | Train: loss=0.044, acc= 99.0% | time=303.9ms | Valid: loss=1.043, acc= 78.0% |
+Epoch  51 | Train: loss=0.049, acc= 98.8% | time=304.7ms | Valid: loss=1.035, acc= 77.2% |
+Epoch  52 | Train: loss=0.049, acc= 98.9% | time=304.5ms | Valid: loss=0.982, acc= 80.0% |
+Epoch  53 | Train: loss=0.048, acc= 98.8% | time=304.3ms | Valid: loss=1.028, acc= 79.6% |
+Epoch  54 | Train: loss=0.048, acc= 98.8% | time=304.1ms | Valid: loss=0.983, acc= 80.0% | lr=7.8e-04
+Epoch  55 | Train: loss=0.047, acc= 98.8% | time=304.2ms | Valid: loss=1.000, acc= 80.4% |
+Epoch  56 | Train: loss=0.051, acc= 98.8% | time=304.9ms | Valid: loss=1.042, acc= 80.4% |
+Epoch  57 | Train: loss=0.049, acc= 98.7% | time=304.3ms | Valid: loss=0.963, acc= 79.6% |
+Epoch  58 | Train: loss=0.046, acc= 98.9% | time=304.4ms | Valid: loss=1.054, acc= 78.0% |
+Epoch  59 | Train: loss=0.047, acc= 98.9% | time=304.5ms | Valid: loss=0.967, acc= 79.6% |
+Epoch  60 | Train: loss=0.045, acc= 99.1% | time=304.1ms | Valid: loss=1.007, acc= 78.4% | lr=3.9e-04
+Epoch  61 | Train: loss=0.046, acc= 98.9% | time=305.8ms | Valid: loss=1.026, acc= 80.0% |
+Epoch  62 | Train: loss=0.046, acc= 98.8% | time=304.6ms | Valid: loss=0.992, acc= 80.4% |
+Epoch  63 | Train: loss=0.047, acc= 98.8% | time=304.0ms | Valid: loss=1.057, acc= 78.0% |
+Epoch  64 | Train: loss=0.048, acc= 98.7% | time=303.9ms | Valid: loss=0.968, acc= 80.8% |
+Epoch  65 | Train: loss=0.045, acc= 98.9% | time=303.8ms | Valid: loss=1.012, acc= 79.2% |
+Epoch  66 | Train: loss=0.047, acc= 98.7% | time=303.9ms | Valid: loss=1.060, acc= 77.6% | lr=2.0e-04
+Epoch  67 | Train: loss=0.045, acc= 99.0% | time=303.7ms | Valid: loss=1.006, acc= 80.8% |
+Epoch  68 | Train: loss=0.049, acc= 98.8% | time=303.4ms | Valid: loss=0.976, acc= 78.8% |
+Epoch  69 | Train: loss=0.046, acc= 99.0% | time=303.6ms | Valid: loss=0.979, acc= 77.6% |
+Epoch  70 | Train: loss=0.049, acc= 98.8% | time=303.3ms | Valid: loss=1.010, acc= 79.2% |
+Epoch  71 | Train: loss=0.045, acc= 98.9% | time=302.1ms | Valid: loss=1.018, acc= 78.4% |
+Epoch  72 | Train: loss=0.046, acc= 98.9% | time=301.6ms | Valid: loss=1.021, acc= 76.8% | lr=9.8e-05
+Epoch  73 | Train: loss=0.046, acc= 98.7% | time=302.5ms | Valid: loss=1.029, acc= 78.8% |
+Epoch  74 | Train: loss=0.046, acc= 98.8% | time=302.7ms | Valid: loss=0.918, acc= 79.6% |
+Epoch  75 | Train: loss=0.043, acc= 99.0% | time=302.3ms | Valid: loss=1.017, acc= 77.6% |
+Epoch  76 | Train: loss=0.046, acc= 98.9% | time=302.5ms | Valid: loss=0.970, acc= 78.8% |
+Epoch  77 | Train: loss=0.046, acc= 98.9% | time=302.8ms | Valid: loss=1.014, acc= 78.8% |
+Epoch  78 | Train: loss=0.044, acc= 98.9% | time=302.5ms | Valid: loss=0.963, acc= 80.8% | lr=4.9e-05
+Test: loss=0.900 , acc= 78.5%
+#####len(mat_list)#####len(grad_list) 5 5
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (48, 20184)
+Layer 2 : (576, 14400)
+Layer 3 : (512, 2500)
+Layer 4 : (1024, 125)
+Layer 5 : (2048, 125)
+------------------------------
+threshold_list:  [0.982 0.982 0.982 0.982 0.982]
+Gradient Matrix torch.Size([64, 48])
+Matrix waiting to be decomposed torch.Size([320, 48])
+Rank of Matrix： tensor(1, device='cuda:0')
+space_list[i] torch.Size([48, 1])
+Revised space_list[i] torch.Size([48, 4])
+Gradient Matrix torch.Size([128, 576])
+Matrix waiting to be decomposed torch.Size([640, 576])
+Rank of Matrix： tensor(576, device='cuda:0')
+space_list[i] torch.Size([576, 576])
+Revised space_list[i] torch.Size([576, 151])
+Gradient Matrix torch.Size([256, 512])
+Matrix waiting to be decomposed torch.Size([1280, 512])
+Rank of Matrix： tensor(512, device='cuda:0')
+space_list[i] torch.Size([512, 512])
+Revised space_list[i] torch.Size([512, 158])
+Gradient Matrix torch.Size([2048, 1024])
+Matrix waiting to be decomposed torch.Size([10240, 1024])
+Rank of Matrix： tensor(1, device='cuda:0')
+space_list[i] torch.Size([1024, 1])
+Revised space_list[i] torch.Size([1024, 186])
+Gradient Matrix torch.Size([2048, 2048])
+Matrix waiting to be decomposed torch.Size([10240, 2048])
+Rank of Matrix： tensor(1, device='cuda:0')
+space_list[i] torch.Size([2048, 1])
+Revised space_list[i] torch.Size([2048, 278])
+----------------------------------------
+Common Null Space Matrix
+----------------------------------------
+Layer 1 : 48 * 4
+Layer 2 : 576 * 151
+Layer 3 : 512 * 158
+Layer 4 : 1024 * 186
+Layer 5 : 2048 * 278
+----------------------------------------
+Current memory usage: RSS=7321.50MB, VMS=18127.54MB
+Accuracies =
+	 77.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 75.1%  72.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 72.1%  66.7%  77.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 71.2%  65.4%  74.3%  75.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 70.9%  65.0%  72.1%  73.6%  78.6%   0.0%   0.0%   0.0%   0.0%   0.0% 
+****************************************************************************************************
+Task  5 (cifar100-5)
+****************************************************************************************************
+----------------------------------------
+Task ID :5 | Learning Rate : 0.05
+----------------------------------------
+Epoch   1 | Train: loss=1.361, acc= 56.6% | time=309.9ms | Valid: loss=1.615, acc= 50.0% | *
+Epoch   2 | Train: loss=0.844, acc= 71.5% | time=302.5ms | Valid: loss=1.155, acc= 60.8% | *
+Epoch   3 | Train: loss=0.725, acc= 74.9% | time=304.1ms | Valid: loss=1.140, acc= 64.8% | *
+Epoch   4 | Train: loss=0.566, acc= 79.6% | time=302.8ms | Valid: loss=0.991, acc= 69.6% | *
+Epoch   5 | Train: loss=0.577, acc= 79.5% | time=302.2ms | Valid: loss=1.125, acc= 67.2% |
+Epoch   6 | Train: loss=0.820, acc= 73.2% | time=303.8ms | Valid: loss=1.484, acc= 61.6% |
+Epoch   7 | Train: loss=0.453, acc= 83.7% | time=302.2ms | Valid: loss=0.971, acc= 71.2% | *
+Epoch   8 | Train: loss=0.443, acc= 83.5% | time=301.9ms | Valid: loss=1.094, acc= 70.0% |
+Epoch   9 | Train: loss=0.395, acc= 85.6% | time=301.8ms | Valid: loss=1.217, acc= 68.4% |
+Epoch  10 | Train: loss=0.476, acc= 83.4% | time=303.9ms | Valid: loss=1.053, acc= 69.6% |
+Epoch  11 | Train: loss=0.291, acc= 89.1% | time=301.9ms | Valid: loss=1.111, acc= 67.2% |
+Epoch  12 | Train: loss=0.306, acc= 89.2% | time=302.0ms | Valid: loss=1.098, acc= 68.4% |
+Epoch  13 | Train: loss=0.377, acc= 87.1% | time=301.9ms | Valid: loss=1.361, acc= 65.6% | lr=2.5e-02
+Epoch  14 | Train: loss=0.171, acc= 94.0% | time=302.2ms | Valid: loss=0.930, acc= 73.2% | *
+Epoch  15 | Train: loss=0.211, acc= 92.4% | time=302.0ms | Valid: loss=1.032, acc= 71.6% |
+Epoch  16 | Train: loss=0.181, acc= 93.3% | time=302.1ms | Valid: loss=0.926, acc= 73.6% | *
+Epoch  17 | Train: loss=0.173, acc= 93.7% | time=302.6ms | Valid: loss=0.982, acc= 72.8% |
+Epoch  18 | Train: loss=0.159, acc= 94.4% | time=302.2ms | Valid: loss=0.990, acc= 71.6% |
+Epoch  19 | Train: loss=0.122, acc= 95.8% | time=302.3ms | Valid: loss=0.950, acc= 72.0% |
+Epoch  20 | Train: loss=0.134, acc= 94.8% | time=302.2ms | Valid: loss=0.842, acc= 74.8% | *
+Epoch  21 | Train: loss=0.141, acc= 94.7% | time=302.5ms | Valid: loss=0.948, acc= 74.0% |
+Epoch  22 | Train: loss=0.122, acc= 95.6% | time=303.6ms | Valid: loss=1.032, acc= 72.0% |
+Epoch  23 | Train: loss=0.100, acc= 96.6% | time=302.5ms | Valid: loss=1.034, acc= 72.8% |
+Epoch  24 | Train: loss=0.115, acc= 96.2% | time=302.8ms | Valid: loss=1.039, acc= 70.8% |
+Epoch  25 | Train: loss=0.137, acc= 95.4% | time=302.3ms | Valid: loss=1.011, acc= 68.4% |
+Epoch  26 | Train: loss=0.082, acc= 97.3% | time=302.5ms | Valid: loss=0.896, acc= 74.8% | lr=1.3e-02
+Epoch  27 | Train: loss=0.065, acc= 98.0% | time=302.8ms | Valid: loss=0.880, acc= 73.2% |
+Epoch  28 | Train: loss=0.065, acc= 97.9% | time=302.5ms | Valid: loss=0.870, acc= 74.4% |
+Epoch  29 | Train: loss=0.067, acc= 98.0% | time=301.9ms | Valid: loss=0.910, acc= 74.4% |
+Epoch  30 | Train: loss=0.081, acc= 97.3% | time=301.8ms | Valid: loss=0.947, acc= 74.4% |
+Epoch  31 | Train: loss=0.059, acc= 98.3% | time=301.5ms | Valid: loss=0.903, acc= 74.0% |
+Epoch  32 | Train: loss=0.062, acc= 98.1% | time=301.8ms | Valid: loss=0.925, acc= 73.2% | lr=6.3e-03
+Epoch  33 | Train: loss=0.062, acc= 98.1% | time=302.5ms | Valid: loss=0.932, acc= 73.6% |
+Epoch  34 | Train: loss=0.060, acc= 98.2% | time=302.1ms | Valid: loss=0.959, acc= 73.2% |
+Epoch  35 | Train: loss=0.051, acc= 98.6% | time=302.0ms | Valid: loss=0.875, acc= 72.0% |
+Epoch  36 | Train: loss=0.052, acc= 98.5% | time=302.2ms | Valid: loss=0.964, acc= 71.2% |
+Epoch  37 | Train: loss=0.054, acc= 98.6% | time=302.2ms | Valid: loss=0.949, acc= 76.0% |
+Epoch  38 | Train: loss=0.051, acc= 98.6% | time=304.6ms | Valid: loss=0.874, acc= 74.8% | lr=3.1e-03
+Epoch  39 | Train: loss=0.052, acc= 98.7% | time=302.1ms | Valid: loss=0.958, acc= 73.2% |
+Epoch  40 | Train: loss=0.051, acc= 98.6% | time=302.0ms | Valid: loss=0.921, acc= 74.0% |
+Epoch  41 | Train: loss=0.053, acc= 98.4% | time=302.1ms | Valid: loss=0.935, acc= 74.8% |
+Epoch  42 | Train: loss=0.048, acc= 98.8% | time=304.0ms | Valid: loss=0.883, acc= 76.4% |
+Epoch  43 | Train: loss=0.047, acc= 98.8% | time=305.8ms | Valid: loss=0.857, acc= 74.8% |
+Epoch  44 | Train: loss=0.053, acc= 98.5% | time=302.3ms | Valid: loss=0.901, acc= 72.8% | lr=1.6e-03
+Epoch  45 | Train: loss=0.050, acc= 98.6% | time=302.6ms | Valid: loss=0.918, acc= 74.4% |
+Epoch  46 | Train: loss=0.049, acc= 98.5% | time=302.2ms | Valid: loss=0.915, acc= 75.6% |
+Epoch  47 | Train: loss=0.051, acc= 98.5% | time=302.0ms | Valid: loss=0.910, acc= 74.4% |
+Epoch  48 | Train: loss=0.049, acc= 98.7% | time=302.3ms | Valid: loss=0.868, acc= 74.8% |
+Epoch  49 | Train: loss=0.048, acc= 98.5% | time=303.2ms | Valid: loss=0.916, acc= 72.8% |
+Epoch  50 | Train: loss=0.048, acc= 98.7% | time=303.0ms | Valid: loss=0.898, acc= 75.2% | lr=7.8e-04
+Epoch  51 | Train: loss=0.047, acc= 98.7% | time=303.0ms | Valid: loss=0.841, acc= 75.6% | *
+Epoch  52 | Train: loss=0.050, acc= 98.6% | time=303.1ms | Valid: loss=0.861, acc= 75.6% |
+Epoch  53 | Train: loss=0.047, acc= 98.8% | time=305.2ms | Valid: loss=0.878, acc= 74.0% |
+Epoch  54 | Train: loss=0.049, acc= 98.6% | time=302.9ms | Valid: loss=0.917, acc= 74.8% |
+Epoch  55 | Train: loss=0.044, acc= 98.7% | time=303.0ms | Valid: loss=1.003, acc= 71.6% |
+Epoch  56 | Train: loss=0.046, acc= 98.7% | time=302.8ms | Valid: loss=0.877, acc= 76.4% |
+Epoch  57 | Train: loss=0.047, acc= 98.7% | time=305.0ms | Valid: loss=1.022, acc= 75.6% | lr=3.9e-04
+Epoch  58 | Train: loss=0.046, acc= 98.7% | time=303.2ms | Valid: loss=0.976, acc= 75.2% |
+Epoch  59 | Train: loss=0.049, acc= 98.6% | time=302.6ms | Valid: loss=0.880, acc= 74.0% |
+Epoch  60 | Train: loss=0.045, acc= 98.7% | time=304.2ms | Valid: loss=0.927, acc= 74.0% |
+Epoch  61 | Train: loss=0.046, acc= 98.7% | time=302.9ms | Valid: loss=0.924, acc= 74.4% |
+Epoch  62 | Train: loss=0.046, acc= 98.7% | time=302.1ms | Valid: loss=0.915, acc= 74.4% |
+Epoch  63 | Train: loss=0.049, acc= 98.8% | time=301.8ms | Valid: loss=0.865, acc= 76.0% | lr=2.0e-04
+Epoch  64 | Train: loss=0.047, acc= 98.5% | time=302.7ms | Valid: loss=0.868, acc= 74.8% |
+Epoch  65 | Train: loss=0.044, acc= 98.7% | time=302.2ms | Valid: loss=0.818, acc= 74.8% | *
+Epoch  66 | Train: loss=0.044, acc= 98.8% | time=302.7ms | Valid: loss=0.939, acc= 72.8% |
+Epoch  67 | Train: loss=0.047, acc= 98.6% | time=301.5ms | Valid: loss=0.933, acc= 71.6% |
+Epoch  68 | Train: loss=0.047, acc= 98.7% | time=301.7ms | Valid: loss=0.915, acc= 74.4% |
+Epoch  69 | Train: loss=0.046, acc= 98.8% | time=302.3ms | Valid: loss=0.862, acc= 76.0% |
+Epoch  70 | Train: loss=0.047, acc= 98.7% | time=301.8ms | Valid: loss=0.864, acc= 76.4% |
+Epoch  71 | Train: loss=0.046, acc= 98.8% | time=302.3ms | Valid: loss=0.869, acc= 76.8% | lr=9.8e-05
+Epoch  72 | Train: loss=0.047, acc= 98.8% | time=303.7ms | Valid: loss=0.901, acc= 74.8% |
+Epoch  73 | Train: loss=0.049, acc= 98.6% | time=301.8ms | Valid: loss=0.870, acc= 75.2% |
+Epoch  74 | Train: loss=0.048, acc= 98.7% | time=302.0ms | Valid: loss=0.969, acc= 74.0% |
+Epoch  75 | Train: loss=0.048, acc= 98.8% | time=302.0ms | Valid: loss=0.946, acc= 74.8% |
+Epoch  76 | Train: loss=0.043, acc= 99.0% | time=303.6ms | Valid: loss=0.881, acc= 77.2% |
+Epoch  77 | Train: loss=0.048, acc= 98.6% | time=302.2ms | Valid: loss=0.940, acc= 75.2% | lr=4.9e-05
+Test: loss=0.778 , acc= 78.4%
+#####len(mat_list)#####len(grad_list) 5 5
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (48, 20184)
+Layer 2 : (576, 14400)
+Layer 3 : (512, 2500)
+Layer 4 : (1024, 125)
+Layer 5 : (2048, 125)
+------------------------------
+threshold_list:  [0.985 0.985 0.985 0.985 0.985]
+Gradient Matrix torch.Size([64, 48])
+Matrix waiting to be decomposed torch.Size([384, 48])
+Rank of Matrix： tensor(1, device='cuda:0')
+space_list[i] torch.Size([48, 1])
+Revised space_list[i] torch.Size([48, 3])
+Gradient Matrix torch.Size([128, 576])
+Matrix waiting to be decomposed torch.Size([768, 576])
+Rank of Matrix： tensor(576, device='cuda:0')
+space_list[i] torch.Size([576, 576])
+Revised space_list[i] torch.Size([576, 137])
+Gradient Matrix torch.Size([256, 512])
+Matrix waiting to be decomposed torch.Size([1536, 512])
+Rank of Matrix： tensor(512, device='cuda:0')
+space_list[i] torch.Size([512, 512])
+Revised space_list[i] torch.Size([512, 148])
+Gradient Matrix torch.Size([2048, 1024])
+Matrix waiting to be decomposed torch.Size([12288, 1024])
+Rank of Matrix： tensor(2, device='cuda:0')
+space_list[i] torch.Size([1024, 2])
+Revised space_list[i] torch.Size([1024, 203])
+Gradient Matrix torch.Size([2048, 2048])
+Matrix waiting to be decomposed torch.Size([12288, 2048])
+Rank of Matrix： tensor(1, device='cuda:0')
+space_list[i] torch.Size([2048, 1])
+Revised space_list[i] torch.Size([2048, 310])
+----------------------------------------
+Common Null Space Matrix
+----------------------------------------
+Layer 1 : 48 * 3
+Layer 2 : 576 * 137
+Layer 3 : 512 * 148
+Layer 4 : 1024 * 203
+Layer 5 : 2048 * 310
+----------------------------------------
+Current memory usage: RSS=7323.88MB, VMS=18447.54MB
+Accuracies =
+	 77.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 75.1%  72.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 72.1%  66.7%  77.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 71.2%  65.4%  74.3%  75.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 70.9%  65.0%  72.1%  73.6%  78.6%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 65.5%  61.2%  68.5%  68.7%  75.0%  78.8%   0.0%   0.0%   0.0%   0.0% 
+****************************************************************************************************
+Task  6 (cifar100-6)
+****************************************************************************************************
+----------------------------------------
+Task ID :6 | Learning Rate : 0.05
+----------------------------------------
+Epoch   1 | Train: loss=1.211, acc= 61.7% | time=310.4ms | Valid: loss=1.405, acc= 57.6% | *
+Epoch   2 | Train: loss=0.825, acc= 71.3% | time=303.6ms | Valid: loss=1.033, acc= 66.0% | *
+Epoch   3 | Train: loss=0.902, acc= 70.4% | time=303.2ms | Valid: loss=1.157, acc= 69.6% |
+Epoch   4 | Train: loss=0.748, acc= 74.8% | time=303.0ms | Valid: loss=1.243, acc= 66.8% |
+Epoch   5 | Train: loss=0.760, acc= 75.3% | time=303.1ms | Valid: loss=1.221, acc= 67.6% |
+Epoch   6 | Train: loss=0.674, acc= 76.7% | time=303.0ms | Valid: loss=1.119, acc= 72.0% |
+Epoch   7 | Train: loss=0.441, acc= 83.9% | time=303.1ms | Valid: loss=0.914, acc= 73.6% | *
+Epoch   8 | Train: loss=0.518, acc= 81.2% | time=303.2ms | Valid: loss=1.020, acc= 72.0% |
+Epoch   9 | Train: loss=0.489, acc= 82.2% | time=302.9ms | Valid: loss=0.946, acc= 72.8% |
+Epoch  10 | Train: loss=0.355, acc= 87.4% | time=302.8ms | Valid: loss=0.953, acc= 74.4% |
+Epoch  11 | Train: loss=0.290, acc= 89.8% | time=302.4ms | Valid: loss=0.853, acc= 77.2% | *
+Epoch  12 | Train: loss=0.265, acc= 89.9% | time=302.3ms | Valid: loss=0.920, acc= 76.8% |
+Epoch  13 | Train: loss=0.359, acc= 86.9% | time=302.4ms | Valid: loss=1.062, acc= 73.2% |
+Epoch  14 | Train: loss=0.288, acc= 89.6% | time=302.6ms | Valid: loss=0.846, acc= 78.8% | *
+Epoch  15 | Train: loss=0.174, acc= 94.2% | time=302.6ms | Valid: loss=0.923, acc= 76.4% |
+Epoch  16 | Train: loss=0.238, acc= 91.5% | time=302.2ms | Valid: loss=0.973, acc= 76.0% |
+Epoch  17 | Train: loss=0.143, acc= 95.2% | time=302.3ms | Valid: loss=0.830, acc= 78.4% | *
+Epoch  18 | Train: loss=0.268, acc= 90.5% | time=302.6ms | Valid: loss=1.116, acc= 74.4% |
+Epoch  19 | Train: loss=0.118, acc= 96.0% | time=302.0ms | Valid: loss=0.945, acc= 77.6% |
+Epoch  20 | Train: loss=0.198, acc= 93.6% | time=302.1ms | Valid: loss=1.041, acc= 76.0% |
+Epoch  21 | Train: loss=0.097, acc= 96.7% | time=303.9ms | Valid: loss=0.835, acc= 78.0% |
+Epoch  22 | Train: loss=0.188, acc= 93.2% | time=302.6ms | Valid: loss=1.085, acc= 77.6% |
+Epoch  23 | Train: loss=0.094, acc= 96.6% | time=302.3ms | Valid: loss=1.009, acc= 76.0% | lr=2.5e-02
+Epoch  24 | Train: loss=0.055, acc= 98.3% | time=302.4ms | Valid: loss=0.901, acc= 78.0% |
+Epoch  25 | Train: loss=0.048, acc= 98.7% | time=302.4ms | Valid: loss=0.875, acc= 78.0% |
+Epoch  26 | Train: loss=0.059, acc= 98.1% | time=302.6ms | Valid: loss=0.936, acc= 79.2% |
+Epoch  27 | Train: loss=0.059, acc= 98.4% | time=302.2ms | Valid: loss=0.972, acc= 78.4% |
+Epoch  28 | Train: loss=0.038, acc= 99.0% | time=301.8ms | Valid: loss=0.900, acc= 80.0% |
+Epoch  29 | Train: loss=0.041, acc= 98.9% | time=302.0ms | Valid: loss=0.906, acc= 78.4% | lr=1.3e-02
+Epoch  30 | Train: loss=0.029, acc= 99.3% | time=302.2ms | Valid: loss=0.863, acc= 79.2% |
+Epoch  31 | Train: loss=0.029, acc= 99.4% | time=301.7ms | Valid: loss=0.865, acc= 78.4% |
+Epoch  32 | Train: loss=0.030, acc= 99.2% | time=302.3ms | Valid: loss=0.886, acc= 79.6% |
+Epoch  33 | Train: loss=0.025, acc= 99.4% | time=301.9ms | Valid: loss=0.894, acc= 80.0% |
+Epoch  34 | Train: loss=0.027, acc= 99.4% | time=302.4ms | Valid: loss=0.885, acc= 80.8% |
+Epoch  35 | Train: loss=0.028, acc= 99.2% | time=302.1ms | Valid: loss=0.937, acc= 78.0% | lr=6.3e-03
+Epoch  36 | Train: loss=0.023, acc= 99.6% | time=301.8ms | Valid: loss=0.944, acc= 76.8% |
+Epoch  37 | Train: loss=0.022, acc= 99.6% | time=303.0ms | Valid: loss=1.000, acc= 79.6% |
+Epoch  38 | Train: loss=0.023, acc= 99.5% | time=302.2ms | Valid: loss=0.964, acc= 80.0% |
+Epoch  39 | Train: loss=0.020, acc= 99.7% | time=302.4ms | Valid: loss=0.944, acc= 78.4% |
+Epoch  40 | Train: loss=0.021, acc= 99.5% | time=302.3ms | Valid: loss=0.879, acc= 79.2% |
+Epoch  41 | Train: loss=0.019, acc= 99.7% | time=302.3ms | Valid: loss=0.933, acc= 79.2% | lr=3.1e-03
+Epoch  42 | Train: loss=0.020, acc= 99.6% | time=303.1ms | Valid: loss=0.880, acc= 80.8% |
+Epoch  43 | Train: loss=0.019, acc= 99.6% | time=302.3ms | Valid: loss=0.966, acc= 78.8% |
+Epoch  44 | Train: loss=0.021, acc= 99.5% | time=301.8ms | Valid: loss=0.905, acc= 80.4% |
+Epoch  45 | Train: loss=0.022, acc= 99.6% | time=301.7ms | Valid: loss=0.831, acc= 79.6% |
+Epoch  46 | Train: loss=0.017, acc= 99.8% | time=302.1ms | Valid: loss=1.056, acc= 78.4% |
+Epoch  47 | Train: loss=0.019, acc= 99.6% | time=301.8ms | Valid: loss=0.887, acc= 80.4% | lr=1.6e-03
+Epoch  48 | Train: loss=0.017, acc= 99.6% | time=308.2ms | Valid: loss=0.908, acc= 80.4% |
+Epoch  49 | Train: loss=0.017, acc= 99.6% | time=302.1ms | Valid: loss=0.860, acc= 80.0% |
+Epoch  50 | Train: loss=0.017, acc= 99.7% | time=302.2ms | Valid: loss=0.909, acc= 80.4% |
+Epoch  51 | Train: loss=0.016, acc= 99.7% | time=302.1ms | Valid: loss=0.921, acc= 80.8% |
+Epoch  52 | Train: loss=0.018, acc= 99.7% | time=302.0ms | Valid: loss=0.916, acc= 80.8% |
+Epoch  53 | Train: loss=0.019, acc= 99.6% | time=306.9ms | Valid: loss=0.849, acc= 82.4% | lr=7.8e-04
+Epoch  54 | Train: loss=0.017, acc= 99.7% | time=302.7ms | Valid: loss=0.927, acc= 80.8% |
+Epoch  55 | Train: loss=0.016, acc= 99.7% | time=302.0ms | Valid: loss=0.901, acc= 80.4% |
+Epoch  56 | Train: loss=0.016, acc= 99.8% | time=302.5ms | Valid: loss=0.940, acc= 80.0% |
+Epoch  57 | Train: loss=0.018, acc= 99.6% | time=302.1ms | Valid: loss=0.904, acc= 79.2% |
+Epoch  58 | Train: loss=0.016, acc= 99.8% | time=302.2ms | Valid: loss=0.821, acc= 81.6% | *
+Epoch  59 | Train: loss=0.018, acc= 99.7% | time=302.3ms | Valid: loss=0.928, acc= 81.2% |
+Epoch  60 | Train: loss=0.016, acc= 99.7% | time=301.9ms | Valid: loss=0.933, acc= 79.6% |
+Epoch  61 | Train: loss=0.018, acc= 99.7% | time=302.0ms | Valid: loss=0.843, acc= 80.8% |
+Epoch  62 | Train: loss=0.019, acc= 99.7% | time=302.8ms | Valid: loss=0.885, acc= 80.4% |
+Epoch  63 | Train: loss=0.017, acc= 99.6% | time=302.4ms | Valid: loss=0.927, acc= 78.0% |
+Epoch  64 | Train: loss=0.018, acc= 99.6% | time=302.7ms | Valid: loss=0.857, acc= 81.6% | lr=3.9e-04
+Epoch  65 | Train: loss=0.019, acc= 99.6% | time=302.4ms | Valid: loss=0.937, acc= 80.4% |
+Epoch  66 | Train: loss=0.016, acc= 99.7% | time=302.2ms | Valid: loss=0.885, acc= 79.6% |
+Epoch  67 | Train: loss=0.016, acc= 99.7% | time=302.5ms | Valid: loss=0.860, acc= 80.8% |
+Epoch  68 | Train: loss=0.016, acc= 99.7% | time=302.3ms | Valid: loss=0.935, acc= 80.0% |
+Epoch  69 | Train: loss=0.017, acc= 99.7% | time=302.5ms | Valid: loss=0.871, acc= 78.8% |
+Epoch  70 | Train: loss=0.017, acc= 99.8% | time=302.1ms | Valid: loss=0.868, acc= 79.2% | lr=2.0e-04
+Epoch  71 | Train: loss=0.017, acc= 99.7% | time=302.7ms | Valid: loss=0.916, acc= 80.8% |
+Epoch  72 | Train: loss=0.015, acc= 99.7% | time=302.3ms | Valid: loss=0.850, acc= 81.2% |
+Epoch  73 | Train: loss=0.016, acc= 99.7% | time=302.4ms | Valid: loss=0.869, acc= 81.2% |
+Epoch  74 | Train: loss=0.016, acc= 99.8% | time=302.1ms | Valid: loss=0.899, acc= 82.0% |
+Epoch  75 | Train: loss=0.017, acc= 99.8% | time=302.6ms | Valid: loss=0.868, acc= 80.4% |
+Epoch  76 | Train: loss=0.017, acc= 99.7% | time=302.4ms | Valid: loss=0.912, acc= 79.2% | lr=9.8e-05
+Epoch  77 | Train: loss=0.017, acc= 99.7% | time=302.4ms | Valid: loss=0.895, acc= 79.2% |
+Epoch  78 | Train: loss=0.016, acc= 99.8% | time=302.0ms | Valid: loss=0.910, acc= 78.8% |
+Epoch  79 | Train: loss=0.016, acc= 99.7% | time=302.1ms | Valid: loss=0.942, acc= 78.0% |
+Epoch  80 | Train: loss=0.016, acc= 99.8% | time=302.2ms | Valid: loss=0.848, acc= 80.8% |
+Epoch  81 | Train: loss=0.015, acc= 99.8% | time=302.3ms | Valid: loss=0.899, acc= 81.2% |
+Epoch  82 | Train: loss=0.017, acc= 99.6% | time=302.0ms | Valid: loss=0.854, acc= 80.4% | lr=4.9e-05
+Test: loss=0.837 , acc= 80.5%
+#####len(mat_list)#####len(grad_list) 5 5
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (48, 20184)
+Layer 2 : (576, 14400)
+Layer 3 : (512, 2500)
+Layer 4 : (1024, 125)
+Layer 5 : (2048, 125)
+------------------------------
+threshold_list:  [0.988 0.988 0.988 0.988 0.988]
+Gradient Matrix torch.Size([64, 48])
+Matrix waiting to be decomposed torch.Size([448, 48])
+Rank of Matrix： tensor(1, device='cuda:0')
+space_list[i] torch.Size([48, 1])
+Revised space_list[i] torch.Size([48, 4])
+Gradient Matrix torch.Size([128, 576])
+Matrix waiting to be decomposed torch.Size([896, 576])
+Rank of Matrix： tensor(576, device='cuda:0')
+space_list[i] torch.Size([576, 576])
+Revised space_list[i] torch.Size([576, 128])
+Gradient Matrix torch.Size([256, 512])
+Matrix waiting to be decomposed torch.Size([1792, 512])
+Rank of Matrix： tensor(512, device='cuda:0')
+space_list[i] torch.Size([512, 512])
+Revised space_list[i] torch.Size([512, 140])
+Gradient Matrix torch.Size([2048, 1024])
+Matrix waiting to be decomposed torch.Size([14336, 1024])
+Rank of Matrix： tensor(2, device='cuda:0')
+space_list[i] torch.Size([1024, 2])
+Revised space_list[i] torch.Size([1024, 218])
+Gradient Matrix torch.Size([2048, 2048])
+Matrix waiting to be decomposed torch.Size([14336, 2048])
+Rank of Matrix： tensor(2, device='cuda:0')
+space_list[i] torch.Size([2048, 2])
+Revised space_list[i] torch.Size([2048, 342])
+----------------------------------------
+Common Null Space Matrix
+----------------------------------------
+Layer 1 : 48 * 4
+Layer 2 : 576 * 128
+Layer 3 : 512 * 140
+Layer 4 : 1024 * 218
+Layer 5 : 2048 * 342
+----------------------------------------
+Current memory usage: RSS=7330.01MB, VMS=18837.28MB
+Accuracies =
+	 77.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 75.1%  72.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 72.1%  66.7%  77.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 71.2%  65.4%  74.3%  75.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 70.9%  65.0%  72.1%  73.6%  78.6%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 65.5%  61.2%  68.5%  68.7%  75.0%  78.8%   0.0%   0.0%   0.0%   0.0% 
+	 60.4%  58.0%  67.5%  62.6%  70.7%  73.2%  81.8%   0.0%   0.0%   0.0% 
+****************************************************************************************************
+Task  7 (cifar100-7)
+****************************************************************************************************
+----------------------------------------
+Task ID :7 | Learning Rate : 0.05
+----------------------------------------
+Epoch   1 | Train: loss=1.395, acc= 56.6% | time=310.2ms | Valid: loss=1.540, acc= 52.4% | *
+Epoch   2 | Train: loss=0.945, acc= 67.9% | time=302.8ms | Valid: loss=1.362, acc= 57.6% | *
+Epoch   3 | Train: loss=0.766, acc= 74.4% | time=304.0ms | Valid: loss=1.152, acc= 67.2% | *
+Epoch   4 | Train: loss=0.781, acc= 72.8% | time=302.8ms | Valid: loss=1.234, acc= 60.0% |
+Epoch   5 | Train: loss=0.762, acc= 74.4% | time=302.6ms | Valid: loss=1.206, acc= 65.2% |
+Epoch   6 | Train: loss=0.597, acc= 79.4% | time=302.9ms | Valid: loss=1.091, acc= 66.8% | *
+Epoch   7 | Train: loss=0.477, acc= 84.2% | time=302.8ms | Valid: loss=1.020, acc= 68.0% | *
+Epoch   8 | Train: loss=0.385, acc= 86.3% | time=302.7ms | Valid: loss=1.037, acc= 68.0% |
+Epoch   9 | Train: loss=0.495, acc= 83.1% | time=302.7ms | Valid: loss=1.180, acc= 67.6% |
+Epoch  10 | Train: loss=0.382, acc= 86.7% | time=302.8ms | Valid: loss=1.027, acc= 70.4% |
+Epoch  11 | Train: loss=0.291, acc= 89.6% | time=303.1ms | Valid: loss=1.000, acc= 70.0% | *
+Epoch  12 | Train: loss=0.355, acc= 87.1% | time=304.2ms | Valid: loss=1.069, acc= 69.6% |
+Epoch  13 | Train: loss=0.274, acc= 90.6% | time=302.9ms | Valid: loss=0.939, acc= 72.0% | *
+Epoch  14 | Train: loss=0.279, acc= 90.4% | time=303.3ms | Valid: loss=1.070, acc= 72.0% |
+Epoch  15 | Train: loss=0.203, acc= 93.3% | time=303.0ms | Valid: loss=0.962, acc= 72.0% |
+Epoch  16 | Train: loss=0.189, acc= 93.7% | time=302.8ms | Valid: loss=1.046, acc= 72.0% |
+Epoch  17 | Train: loss=0.229, acc= 92.1% | time=302.6ms | Valid: loss=1.118, acc= 70.4% |
+Epoch  18 | Train: loss=0.226, acc= 91.7% | time=302.6ms | Valid: loss=1.123, acc= 71.6% |
+Epoch  19 | Train: loss=0.130, acc= 95.6% | time=302.6ms | Valid: loss=1.040, acc= 74.4% | lr=2.5e-02
+Epoch  20 | Train: loss=0.100, acc= 97.1% | time=301.4ms | Valid: loss=1.098, acc= 69.6% |
+Epoch  21 | Train: loss=0.086, acc= 97.3% | time=301.9ms | Valid: loss=1.028, acc= 73.2% |
+Epoch  22 | Train: loss=0.083, acc= 97.6% | time=302.0ms | Valid: loss=1.038, acc= 72.4% |
+Epoch  23 | Train: loss=0.087, acc= 97.1% | time=301.8ms | Valid: loss=1.045, acc= 72.8% |
+Epoch  24 | Train: loss=0.070, acc= 98.0% | time=301.5ms | Valid: loss=1.102, acc= 72.4% |
+Epoch  25 | Train: loss=0.065, acc= 98.2% | time=301.8ms | Valid: loss=1.067, acc= 71.6% | lr=1.3e-02
+Epoch  26 | Train: loss=0.065, acc= 98.1% | time=302.0ms | Valid: loss=1.037, acc= 72.0% |
+Epoch  27 | Train: loss=0.064, acc= 98.1% | time=301.7ms | Valid: loss=1.044, acc= 72.8% |
+Epoch  28 | Train: loss=0.060, acc= 98.3% | time=301.4ms | Valid: loss=1.146, acc= 72.8% |
+Epoch  29 | Train: loss=0.052, acc= 98.5% | time=301.2ms | Valid: loss=1.109, acc= 73.2% |
+Epoch  30 | Train: loss=0.050, acc= 98.6% | time=301.8ms | Valid: loss=1.122, acc= 75.6% |
+Epoch  31 | Train: loss=0.044, acc= 98.8% | time=301.6ms | Valid: loss=1.032, acc= 73.6% | lr=6.3e-03
+Epoch  32 | Train: loss=0.043, acc= 99.1% | time=301.7ms | Valid: loss=1.050, acc= 73.6% |
+Epoch  33 | Train: loss=0.044, acc= 98.8% | time=301.7ms | Valid: loss=1.110, acc= 72.4% |
+Epoch  34 | Train: loss=0.037, acc= 99.1% | time=301.7ms | Valid: loss=1.030, acc= 74.0% |
+Epoch  35 | Train: loss=0.040, acc= 99.1% | time=301.8ms | Valid: loss=1.039, acc= 74.8% |
+Epoch  36 | Train: loss=0.041, acc= 99.1% | time=301.5ms | Valid: loss=0.992, acc= 75.6% |
+Epoch  37 | Train: loss=0.041, acc= 99.0% | time=301.9ms | Valid: loss=1.024, acc= 72.0% | lr=3.1e-03
+Epoch  38 | Train: loss=0.039, acc= 99.0% | time=301.2ms | Valid: loss=1.022, acc= 74.0% |
+Epoch  39 | Train: loss=0.034, acc= 99.2% | time=301.4ms | Valid: loss=1.060, acc= 72.0% |
+Epoch  40 | Train: loss=0.039, acc= 99.2% | time=301.5ms | Valid: loss=1.072, acc= 74.8% |
+Epoch  41 | Train: loss=0.036, acc= 99.2% | time=301.4ms | Valid: loss=1.091, acc= 72.8% |
+Epoch  42 | Train: loss=0.035, acc= 99.2% | time=301.9ms | Valid: loss=0.968, acc= 76.4% |
+Epoch  43 | Train: loss=0.036, acc= 99.1% | time=301.6ms | Valid: loss=1.014, acc= 72.4% | lr=1.6e-03
+Epoch  44 | Train: loss=0.035, acc= 99.3% | time=301.6ms | Valid: loss=0.987, acc= 75.2% |
+Epoch  45 | Train: loss=0.035, acc= 99.3% | time=301.4ms | Valid: loss=0.994, acc= 75.2% |
+Epoch  46 | Train: loss=0.033, acc= 99.2% | time=301.6ms | Valid: loss=0.998, acc= 77.2% |
+Epoch  47 | Train: loss=0.034, acc= 99.2% | time=302.4ms | Valid: loss=0.972, acc= 76.4% |
+Epoch  48 | Train: loss=0.033, acc= 99.3% | time=301.9ms | Valid: loss=1.026, acc= 73.2% |
+Epoch  49 | Train: loss=0.031, acc= 99.4% | time=301.3ms | Valid: loss=1.007, acc= 74.8% | lr=7.8e-04
+Epoch  50 | Train: loss=0.035, acc= 99.2% | time=301.4ms | Valid: loss=0.968, acc= 77.2% |
+Epoch  51 | Train: loss=0.035, acc= 99.1% | time=301.7ms | Valid: loss=1.065, acc= 73.6% |
+Epoch  52 | Train: loss=0.033, acc= 99.3% | time=301.7ms | Valid: loss=0.942, acc= 75.2% |
+Epoch  53 | Train: loss=0.036, acc= 99.2% | time=302.0ms | Valid: loss=1.038, acc= 73.6% |
+Epoch  54 | Train: loss=0.034, acc= 99.2% | time=301.7ms | Valid: loss=1.032, acc= 74.0% |
+Epoch  55 | Train: loss=0.036, acc= 99.2% | time=301.5ms | Valid: loss=1.034, acc= 74.4% | lr=3.9e-04
+Epoch  56 | Train: loss=0.033, acc= 99.3% | time=301.7ms | Valid: loss=1.019, acc= 74.8% |
+Epoch  57 | Train: loss=0.034, acc= 99.2% | time=301.7ms | Valid: loss=1.043, acc= 74.4% |
+Epoch  58 | Train: loss=0.033, acc= 99.3% | time=307.3ms | Valid: loss=0.994, acc= 74.0% |
+Epoch  59 | Train: loss=0.033, acc= 99.1% | time=301.7ms | Valid: loss=0.983, acc= 76.0% |
+Epoch  60 | Train: loss=0.033, acc= 99.2% | time=301.6ms | Valid: loss=1.015, acc= 75.2% |
+Epoch  61 | Train: loss=0.034, acc= 99.1% | time=301.3ms | Valid: loss=0.964, acc= 75.2% | lr=2.0e-04
+Epoch  62 | Train: loss=0.032, acc= 99.2% | time=301.5ms | Valid: loss=1.012, acc= 75.2% |
+Epoch  63 | Train: loss=0.034, acc= 99.3% | time=306.3ms | Valid: loss=1.008, acc= 75.2% |
+Epoch  64 | Train: loss=0.035, acc= 99.3% | time=302.1ms | Valid: loss=1.016, acc= 75.2% |
+Epoch  65 | Train: loss=0.033, acc= 99.2% | time=301.8ms | Valid: loss=0.998, acc= 73.2% |
+Epoch  66 | Train: loss=0.033, acc= 99.1% | time=301.9ms | Valid: loss=1.080, acc= 76.4% |
+Epoch  67 | Train: loss=0.030, acc= 99.3% | time=302.2ms | Valid: loss=0.973, acc= 73.6% | lr=9.8e-05
+Epoch  68 | Train: loss=0.034, acc= 99.2% | time=301.9ms | Valid: loss=1.075, acc= 75.2% |
+Epoch  69 | Train: loss=0.035, acc= 99.3% | time=301.9ms | Valid: loss=1.085, acc= 73.6% |
+Epoch  70 | Train: loss=0.033, acc= 99.2% | time=301.6ms | Valid: loss=0.975, acc= 76.8% |
+Epoch  71 | Train: loss=0.032, acc= 99.3% | time=301.7ms | Valid: loss=1.088, acc= 72.8% |
+Epoch  72 | Train: loss=0.031, acc= 99.4% | time=301.7ms | Valid: loss=1.054, acc= 76.4% |
+Epoch  73 | Train: loss=0.035, acc= 99.2% | time=301.7ms | Valid: loss=1.062, acc= 74.8% | lr=4.9e-05
+Test: loss=0.929 , acc= 73.2%
+#####len(mat_list)#####len(grad_list) 5 5
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (48, 20184)
+Layer 2 : (576, 14400)
+Layer 3 : (512, 2500)
+Layer 4 : (1024, 125)
+Layer 5 : (2048, 125)
+------------------------------
+threshold_list:  [0.991 0.991 0.991 0.991 0.991]
+Gradient Matrix torch.Size([64, 48])
+Matrix waiting to be decomposed torch.Size([512, 48])
+Rank of Matrix： tensor(1, device='cuda:0')
+space_list[i] torch.Size([48, 1])
+Revised space_list[i] torch.Size([48, 4])
+Gradient Matrix torch.Size([128, 576])
+Matrix waiting to be decomposed torch.Size([1024, 576])
+Rank of Matrix： tensor(576, device='cuda:0')
+space_list[i] torch.Size([576, 576])
+Revised space_list[i] torch.Size([576, 122])
+Gradient Matrix torch.Size([256, 512])
+Matrix waiting to be decomposed torch.Size([2048, 512])
+Rank of Matrix： tensor(512, device='cuda:0')
+space_list[i] torch.Size([512, 512])
+Revised space_list[i] torch.Size([512, 134])
+Gradient Matrix torch.Size([2048, 1024])
+Matrix waiting to be decomposed torch.Size([16384, 1024])
+Rank of Matrix： tensor(3, device='cuda:0')
+space_list[i] torch.Size([1024, 3])
+Revised space_list[i] torch.Size([1024, 228])
+Gradient Matrix torch.Size([2048, 2048])
+Matrix waiting to be decomposed torch.Size([16384, 2048])
+Rank of Matrix： tensor(2, device='cuda:0')
+space_list[i] torch.Size([2048, 2])
+Revised space_list[i] torch.Size([2048, 367])
+----------------------------------------
+Common Null Space Matrix
+----------------------------------------
+Layer 1 : 48 * 4
+Layer 2 : 576 * 122
+Layer 3 : 512 * 134
+Layer 4 : 1024 * 228
+Layer 5 : 2048 * 367
+----------------------------------------
+Current memory usage: RSS=7340.11MB, VMS=19263.04MB
+Accuracies =
+	 77.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 75.1%  72.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 72.1%  66.7%  77.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 71.2%  65.4%  74.3%  75.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 70.9%  65.0%  72.1%  73.6%  78.6%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 65.5%  61.2%  68.5%  68.7%  75.0%  78.8%   0.0%   0.0%   0.0%   0.0% 
+	 60.4%  58.0%  67.5%  62.6%  70.7%  73.2%  81.8%   0.0%   0.0%   0.0% 
+	 62.3%  56.3%  63.1%  61.1%  66.7%  69.2%  74.6%  74.7%   0.0%   0.0% 
+****************************************************************************************************
+Task  8 (cifar100-8)
+****************************************************************************************************
+----------------------------------------
+Task ID :8 | Learning Rate : 0.05
+----------------------------------------
+Epoch   1 | Train: loss=1.104, acc= 64.2% | time=312.1ms | Valid: loss=1.155, acc= 60.0% | *
+Epoch   2 | Train: loss=0.963, acc= 69.1% | time=304.4ms | Valid: loss=1.114, acc= 67.2% | *
+Epoch   3 | Train: loss=0.814, acc= 74.2% | time=306.0ms | Valid: loss=1.029, acc= 70.8% | *
+Epoch   4 | Train: loss=0.649, acc= 78.4% | time=304.2ms | Valid: loss=0.930, acc= 70.8% | *
+Epoch   5 | Train: loss=0.555, acc= 81.6% | time=303.6ms | Valid: loss=0.885, acc= 76.0% | *
+Epoch   6 | Train: loss=0.674, acc= 78.0% | time=303.6ms | Valid: loss=1.160, acc= 70.4% |
+Epoch   7 | Train: loss=0.529, acc= 82.1% | time=303.3ms | Valid: loss=0.963, acc= 71.6% |
+Epoch   8 | Train: loss=0.340, acc= 88.5% | time=305.1ms | Valid: loss=0.825, acc= 76.4% | *
+Epoch   9 | Train: loss=0.331, acc= 88.8% | time=303.7ms | Valid: loss=0.761, acc= 79.2% | *
+Epoch  10 | Train: loss=0.367, acc= 88.3% | time=303.8ms | Valid: loss=0.874, acc= 78.4% |
+Epoch  11 | Train: loss=0.359, acc= 87.4% | time=303.6ms | Valid: loss=0.845, acc= 76.0% |
+Epoch  12 | Train: loss=0.290, acc= 89.9% | time=303.6ms | Valid: loss=0.916, acc= 74.0% |
+Epoch  13 | Train: loss=0.185, acc= 93.6% | time=303.4ms | Valid: loss=0.799, acc= 78.0% |
+Epoch  14 | Train: loss=0.179, acc= 94.1% | time=303.8ms | Valid: loss=0.893, acc= 78.8% |
+Epoch  15 | Train: loss=0.142, acc= 95.1% | time=303.3ms | Valid: loss=0.786, acc= 80.4% | lr=2.5e-02
+Epoch  16 | Train: loss=0.120, acc= 96.2% | time=303.4ms | Valid: loss=0.827, acc= 79.6% |
+Epoch  17 | Train: loss=0.109, acc= 96.3% | time=305.1ms | Valid: loss=0.836, acc= 79.6% |
+Epoch  18 | Train: loss=0.093, acc= 97.2% | time=303.5ms | Valid: loss=0.840, acc= 81.2% |
+Epoch  19 | Train: loss=0.105, acc= 96.3% | time=303.5ms | Valid: loss=0.912, acc= 80.0% |
+Epoch  20 | Train: loss=0.086, acc= 97.2% | time=303.6ms | Valid: loss=0.931, acc= 80.4% |
+Epoch  21 | Train: loss=0.075, acc= 97.8% | time=303.6ms | Valid: loss=0.869, acc= 79.6% | lr=1.3e-02
+Epoch  22 | Train: loss=0.062, acc= 98.1% | time=305.1ms | Valid: loss=0.797, acc= 81.6% |
+Epoch  23 | Train: loss=0.058, acc= 98.4% | time=303.4ms | Valid: loss=0.813, acc= 80.0% |
+Epoch  24 | Train: loss=0.057, acc= 98.3% | time=303.4ms | Valid: loss=0.840, acc= 81.6% |
+Epoch  25 | Train: loss=0.049, acc= 98.6% | time=303.4ms | Valid: loss=0.873, acc= 79.6% |
+Epoch  26 | Train: loss=0.053, acc= 98.5% | time=304.0ms | Valid: loss=0.856, acc= 80.0% |
+Epoch  27 | Train: loss=0.048, acc= 98.7% | time=303.5ms | Valid: loss=0.813, acc= 82.4% | lr=6.3e-03
+Epoch  28 | Train: loss=0.049, acc= 98.5% | time=303.2ms | Valid: loss=0.806, acc= 81.6% |
+Epoch  29 | Train: loss=0.048, acc= 98.7% | time=303.2ms | Valid: loss=0.846, acc= 82.4% |
+Epoch  30 | Train: loss=0.047, acc= 98.6% | time=303.4ms | Valid: loss=0.837, acc= 80.8% |
+Epoch  31 | Train: loss=0.043, acc= 99.0% | time=304.7ms | Valid: loss=0.862, acc= 78.8% |
+Epoch  32 | Train: loss=0.040, acc= 98.9% | time=303.7ms | Valid: loss=0.830, acc= 81.6% |
+Epoch  33 | Train: loss=0.041, acc= 98.9% | time=303.4ms | Valid: loss=0.796, acc= 83.2% | lr=3.1e-03
+Epoch  34 | Train: loss=0.040, acc= 99.0% | time=305.2ms | Valid: loss=0.837, acc= 81.6% |
+Epoch  35 | Train: loss=0.039, acc= 99.1% | time=303.4ms | Valid: loss=0.848, acc= 80.4% |
+Epoch  36 | Train: loss=0.039, acc= 99.1% | time=305.1ms | Valid: loss=0.856, acc= 81.6% |
+Epoch  37 | Train: loss=0.033, acc= 99.4% | time=302.8ms | Valid: loss=0.849, acc= 82.0% |
+Epoch  38 | Train: loss=0.036, acc= 99.1% | time=302.4ms | Valid: loss=0.894, acc= 80.8% |
+Epoch  39 | Train: loss=0.039, acc= 99.0% | time=302.3ms | Valid: loss=0.846, acc= 81.6% | lr=1.6e-03
+Epoch  40 | Train: loss=0.037, acc= 99.1% | time=302.1ms | Valid: loss=0.844, acc= 81.6% |
+Epoch  41 | Train: loss=0.035, acc= 99.3% | time=303.1ms | Valid: loss=0.831, acc= 81.2% |
+Epoch  42 | Train: loss=0.039, acc= 98.9% | time=302.5ms | Valid: loss=0.846, acc= 82.4% |
+Epoch  43 | Train: loss=0.036, acc= 99.1% | time=302.6ms | Valid: loss=0.806, acc= 82.8% |
+Epoch  44 | Train: loss=0.035, acc= 99.2% | time=302.5ms | Valid: loss=0.901, acc= 80.4% |
+Epoch  45 | Train: loss=0.033, acc= 99.3% | time=303.4ms | Valid: loss=0.806, acc= 81.6% | lr=7.8e-04
+Epoch  46 | Train: loss=0.035, acc= 99.2% | time=302.1ms | Valid: loss=0.883, acc= 79.2% |
+Epoch  47 | Train: loss=0.033, acc= 99.4% | time=302.3ms | Valid: loss=0.835, acc= 81.2% |
+Epoch  48 | Train: loss=0.035, acc= 99.2% | time=301.7ms | Valid: loss=0.856, acc= 80.8% |
+Epoch  49 | Train: loss=0.033, acc= 99.2% | time=302.2ms | Valid: loss=0.823, acc= 81.6% |
+Epoch  50 | Train: loss=0.036, acc= 99.0% | time=303.8ms | Valid: loss=0.845, acc= 81.6% |
+Epoch  51 | Train: loss=0.034, acc= 99.1% | time=302.2ms | Valid: loss=0.852, acc= 83.2% | lr=3.9e-04
+Epoch  52 | Train: loss=0.034, acc= 99.3% | time=302.2ms | Valid: loss=0.872, acc= 82.8% |
+Epoch  53 | Train: loss=0.033, acc= 99.2% | time=302.1ms | Valid: loss=0.879, acc= 80.4% |
+Epoch  54 | Train: loss=0.036, acc= 99.0% | time=302.3ms | Valid: loss=0.855, acc= 80.8% |
+Epoch  55 | Train: loss=0.037, acc= 99.2% | time=304.4ms | Valid: loss=0.859, acc= 81.2% |
+Epoch  56 | Train: loss=0.035, acc= 99.1% | time=302.8ms | Valid: loss=0.849, acc= 81.2% |
+Epoch  57 | Train: loss=0.035, acc= 99.2% | time=301.8ms | Valid: loss=0.846, acc= 80.4% | lr=2.0e-04
+Epoch  58 | Train: loss=0.033, acc= 99.2% | time=302.4ms | Valid: loss=0.881, acc= 82.0% |
+Epoch  59 | Train: loss=0.037, acc= 99.1% | time=302.0ms | Valid: loss=0.918, acc= 80.4% |
+Epoch  60 | Train: loss=0.033, acc= 99.3% | time=303.1ms | Valid: loss=0.815, acc= 81.2% |
+Epoch  61 | Train: loss=0.037, acc= 98.9% | time=303.2ms | Valid: loss=0.824, acc= 83.2% |
+Epoch  62 | Train: loss=0.034, acc= 99.2% | time=302.9ms | Valid: loss=0.884, acc= 80.4% |
+Epoch  63 | Train: loss=0.037, acc= 99.2% | time=302.8ms | Valid: loss=0.874, acc= 80.4% | lr=9.8e-05
+Epoch  64 | Train: loss=0.030, acc= 99.3% | time=305.3ms | Valid: loss=0.787, acc= 82.8% |
+Epoch  65 | Train: loss=0.037, acc= 99.0% | time=302.9ms | Valid: loss=0.825, acc= 81.6% |
+Epoch  66 | Train: loss=0.033, acc= 99.3% | time=302.9ms | Valid: loss=0.808, acc= 81.6% |
+Epoch  67 | Train: loss=0.035, acc= 99.2% | time=302.9ms | Valid: loss=0.823, acc= 80.8% |
+Epoch  68 | Train: loss=0.034, acc= 99.1% | time=303.0ms | Valid: loss=0.794, acc= 82.4% |
+Epoch  69 | Train: loss=0.035, acc= 99.0% | time=307.6ms | Valid: loss=0.845, acc= 80.8% | lr=4.9e-05
+Test: loss=0.884 , acc= 75.2%
+#####len(mat_list)#####len(grad_list) 5 5
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (48, 20184)
+Layer 2 : (576, 14400)
+Layer 3 : (512, 2500)
+Layer 4 : (1024, 125)
+Layer 5 : (2048, 125)
+------------------------------
+threshold_list:  [0.994 0.994 0.994 0.994 0.994]
+Gradient Matrix torch.Size([64, 48])
+Matrix waiting to be decomposed torch.Size([576, 48])
+Rank of Matrix： tensor(1, device='cuda:0')
+space_list[i] torch.Size([48, 1])
+Revised space_list[i] torch.Size([48, 4])
+Gradient Matrix torch.Size([128, 576])
+Matrix waiting to be decomposed torch.Size([1152, 576])
+Rank of Matrix： tensor(576, device='cuda:0')
+space_list[i] torch.Size([576, 576])
+Revised space_list[i] torch.Size([576, 118])
+Gradient Matrix torch.Size([256, 512])
+Matrix waiting to be decomposed torch.Size([2304, 512])
+Rank of Matrix： tensor(512, device='cuda:0')
+space_list[i] torch.Size([512, 512])
+Revised space_list[i] torch.Size([512, 130])
+Gradient Matrix torch.Size([2048, 1024])
+Matrix waiting to be decomposed torch.Size([18432, 1024])
+Rank of Matrix： tensor(4, device='cuda:0')
+space_list[i] torch.Size([1024, 4])
+Revised space_list[i] torch.Size([1024, 235])
+Gradient Matrix torch.Size([2048, 2048])
+Matrix waiting to be decomposed torch.Size([18432, 2048])
+Rank of Matrix： tensor(2, device='cuda:0')
+space_list[i] torch.Size([2048, 2])
+Revised space_list[i] torch.Size([2048, 390])
+----------------------------------------
+Common Null Space Matrix
+----------------------------------------
+Layer 1 : 48 * 4
+Layer 2 : 576 * 118
+Layer 3 : 512 * 130
+Layer 4 : 1024 * 235
+Layer 5 : 2048 * 390
+----------------------------------------
+Current memory usage: RSS=7342.65MB, VMS=19745.24MB
+Accuracies =
+	 77.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 75.1%  72.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 72.1%  66.7%  77.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 71.2%  65.4%  74.3%  75.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 70.9%  65.0%  72.1%  73.6%  78.6%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 65.5%  61.2%  68.5%  68.7%  75.0%  78.8%   0.0%   0.0%   0.0%   0.0% 
+	 60.4%  58.0%  67.5%  62.6%  70.7%  73.2%  81.8%   0.0%   0.0%   0.0% 
+	 62.3%  56.3%  63.1%  61.1%  66.7%  69.2%  74.6%  74.7%   0.0%   0.0% 
+	 59.2%  54.9%  59.0%  59.0%  67.1%  66.3%  72.3%  71.8%  74.3%   0.0% 
+****************************************************************************************************
+Task  9 (cifar100-9)
+****************************************************************************************************
+----------------------------------------
+Task ID :9 | Learning Rate : 0.05
+----------------------------------------
+Epoch   1 | Train: loss=0.941, acc= 69.3% | time=309.9ms | Valid: loss=1.130, acc= 66.4% | *
+Epoch   2 | Train: loss=0.710, acc= 76.4% | time=302.4ms | Valid: loss=0.883, acc= 68.4% | *
+Epoch   3 | Train: loss=0.583, acc= 80.5% | time=302.6ms | Valid: loss=0.760, acc= 73.6% | *
+Epoch   4 | Train: loss=0.502, acc= 82.6% | time=302.4ms | Valid: loss=0.683, acc= 77.2% | *
+Epoch   5 | Train: loss=0.576, acc= 81.7% | time=302.9ms | Valid: loss=0.850, acc= 72.0% |
+Epoch   6 | Train: loss=0.422, acc= 86.3% | time=302.5ms | Valid: loss=0.794, acc= 77.2% |
+Epoch   7 | Train: loss=0.317, acc= 89.4% | time=302.3ms | Valid: loss=0.690, acc= 79.6% |
+Epoch   8 | Train: loss=0.271, acc= 90.8% | time=302.7ms | Valid: loss=0.570, acc= 83.6% | *
+Epoch   9 | Train: loss=0.262, acc= 90.7% | time=302.7ms | Valid: loss=0.579, acc= 82.0% |
+Epoch  10 | Train: loss=0.204, acc= 93.0% | time=302.8ms | Valid: loss=0.607, acc= 82.0% |
+Epoch  11 | Train: loss=0.160, acc= 94.2% | time=302.5ms | Valid: loss=0.566, acc= 81.2% | *
+Epoch  12 | Train: loss=0.192, acc= 92.9% | time=302.6ms | Valid: loss=0.659, acc= 81.6% |
+Epoch  13 | Train: loss=0.135, acc= 95.5% | time=302.0ms | Valid: loss=0.634, acc= 80.8% |
+Epoch  14 | Train: loss=0.173, acc= 93.9% | time=302.6ms | Valid: loss=0.673, acc= 81.2% |
+Epoch  15 | Train: loss=0.107, acc= 96.5% | time=302.6ms | Valid: loss=0.557, acc= 83.6% | *
+Epoch  16 | Train: loss=0.093, acc= 97.0% | time=302.5ms | Valid: loss=0.599, acc= 84.0% |
+Epoch  17 | Train: loss=0.081, acc= 97.5% | time=301.9ms | Valid: loss=0.621, acc= 83.2% |
+Epoch  18 | Train: loss=0.147, acc= 94.4% | time=302.1ms | Valid: loss=0.778, acc= 80.0% |
+Epoch  19 | Train: loss=0.165, acc= 95.2% | time=302.3ms | Valid: loss=0.759, acc= 80.8% |
+Epoch  20 | Train: loss=0.083, acc= 97.2% | time=301.9ms | Valid: loss=0.685, acc= 82.4% |
+Epoch  21 | Train: loss=0.062, acc= 97.7% | time=302.4ms | Valid: loss=0.674, acc= 84.0% | lr=2.5e-02
+Epoch  22 | Train: loss=0.039, acc= 98.6% | time=302.3ms | Valid: loss=0.675, acc= 82.8% |
+Epoch  23 | Train: loss=0.037, acc= 99.0% | time=303.0ms | Valid: loss=0.633, acc= 82.4% |
+Epoch  24 | Train: loss=0.030, acc= 99.2% | time=302.1ms | Valid: loss=0.608, acc= 83.2% |
+Epoch  25 | Train: loss=0.036, acc= 99.0% | time=302.3ms | Valid: loss=0.671, acc= 82.4% |
+Epoch  26 | Train: loss=0.027, acc= 99.4% | time=301.3ms | Valid: loss=0.634, acc= 84.0% |
+Epoch  27 | Train: loss=0.021, acc= 99.4% | time=301.0ms | Valid: loss=0.595, acc= 83.6% | lr=1.3e-02
+Epoch  28 | Train: loss=0.021, acc= 99.7% | time=301.4ms | Valid: loss=0.630, acc= 84.0% |
+Epoch  29 | Train: loss=0.022, acc= 99.5% | time=301.3ms | Valid: loss=0.657, acc= 85.6% |
+Epoch  30 | Train: loss=0.020, acc= 99.4% | time=301.5ms | Valid: loss=0.636, acc= 85.2% |
+Epoch  31 | Train: loss=0.017, acc= 99.7% | time=301.6ms | Valid: loss=0.735, acc= 84.0% |
+Epoch  32 | Train: loss=0.017, acc= 99.6% | time=302.2ms | Valid: loss=0.596, acc= 85.6% |
+Epoch  33 | Train: loss=0.022, acc= 99.5% | time=301.3ms | Valid: loss=0.623, acc= 86.0% | lr=6.3e-03
+Epoch  34 | Train: loss=0.015, acc= 99.7% | time=301.6ms | Valid: loss=0.653, acc= 83.2% |
+Epoch  35 | Train: loss=0.014, acc= 99.6% | time=301.6ms | Valid: loss=0.536, acc= 86.0% | *
+Epoch  36 | Train: loss=0.012, acc= 99.9% | time=302.3ms | Valid: loss=0.636, acc= 84.8% |
+Epoch  37 | Train: loss=0.014, acc= 99.7% | time=301.9ms | Valid: loss=0.591, acc= 84.4% |
+Epoch  38 | Train: loss=0.014, acc= 99.7% | time=301.8ms | Valid: loss=0.637, acc= 83.6% |
+Epoch  39 | Train: loss=0.013, acc= 99.7% | time=301.7ms | Valid: loss=0.606, acc= 85.2% |
+Epoch  40 | Train: loss=0.013, acc= 99.7% | time=302.8ms | Valid: loss=0.642, acc= 82.4% |
+Epoch  41 | Train: loss=0.012, acc= 99.8% | time=301.7ms | Valid: loss=0.558, acc= 86.0% | lr=3.1e-03
+Epoch  42 | Train: loss=0.014, acc= 99.8% | time=302.2ms | Valid: loss=0.596, acc= 85.6% |
+Epoch  43 | Train: loss=0.014, acc= 99.7% | time=302.1ms | Valid: loss=0.650, acc= 84.0% |
+Epoch  44 | Train: loss=0.013, acc= 99.7% | time=301.9ms | Valid: loss=0.581, acc= 85.2% |
+Epoch  45 | Train: loss=0.012, acc= 99.7% | time=301.8ms | Valid: loss=0.644, acc= 83.6% |
+Epoch  46 | Train: loss=0.012, acc= 99.9% | time=302.2ms | Valid: loss=0.592, acc= 85.6% |
+Epoch  47 | Train: loss=0.012, acc= 99.8% | time=301.5ms | Valid: loss=0.651, acc= 82.4% | lr=1.6e-03
+Epoch  48 | Train: loss=0.014, acc= 99.7% | time=301.4ms | Valid: loss=0.642, acc= 84.8% |
+Epoch  49 | Train: loss=0.013, acc= 99.8% | time=301.5ms | Valid: loss=0.587, acc= 84.8% |
+Epoch  50 | Train: loss=0.014, acc= 99.8% | time=302.4ms | Valid: loss=0.629, acc= 86.4% |
+Epoch  51 | Train: loss=0.012, acc= 99.7% | time=302.2ms | Valid: loss=0.594, acc= 85.2% |
+Epoch  52 | Train: loss=0.013, acc= 99.7% | time=302.0ms | Valid: loss=0.637, acc= 83.6% |
+Epoch  53 | Train: loss=0.010, acc= 99.9% | time=301.3ms | Valid: loss=0.602, acc= 85.2% | lr=7.8e-04
+Epoch  54 | Train: loss=0.014, acc= 99.6% | time=301.2ms | Valid: loss=0.574, acc= 86.4% |
+Epoch  55 | Train: loss=0.013, acc= 99.7% | time=301.3ms | Valid: loss=0.633, acc= 82.4% |
+Epoch  56 | Train: loss=0.012, acc= 99.7% | time=302.1ms | Valid: loss=0.600, acc= 85.2% |
+Epoch  57 | Train: loss=0.012, acc= 99.7% | time=302.2ms | Valid: loss=0.686, acc= 84.4% |
+Epoch  58 | Train: loss=0.012, acc= 99.7% | time=302.1ms | Valid: loss=0.637, acc= 84.4% |
+Epoch  59 | Train: loss=0.011, acc= 99.8% | time=302.0ms | Valid: loss=0.625, acc= 83.2% | lr=3.9e-04
+Epoch  60 | Train: loss=0.011, acc= 99.9% | time=302.2ms | Valid: loss=0.661, acc= 84.4% |
+Epoch  61 | Train: loss=0.010, acc= 99.9% | time=301.8ms | Valid: loss=0.641, acc= 83.6% |
+Epoch  62 | Train: loss=0.012, acc= 99.8% | time=302.2ms | Valid: loss=0.604, acc= 86.4% |
+Epoch  63 | Train: loss=0.011, acc= 99.8% | time=301.9ms | Valid: loss=0.571, acc= 87.2% |
+Epoch  64 | Train: loss=0.013, acc= 99.7% | time=301.7ms | Valid: loss=0.633, acc= 83.2% |
+Epoch  65 | Train: loss=0.011, acc= 99.7% | time=302.2ms | Valid: loss=0.585, acc= 85.6% | lr=2.0e-04
+Epoch  66 | Train: loss=0.011, acc= 99.8% | time=302.0ms | Valid: loss=0.623, acc= 84.0% |
+Epoch  67 | Train: loss=0.011, acc= 99.8% | time=302.3ms | Valid: loss=0.585, acc= 84.0% |
+Epoch  68 | Train: loss=0.013, acc= 99.7% | time=302.1ms | Valid: loss=0.558, acc= 86.8% |
+Epoch  69 | Train: loss=0.011, acc= 99.9% | time=302.2ms | Valid: loss=0.623, acc= 85.6% |
+Epoch  70 | Train: loss=0.012, acc= 99.7% | time=302.8ms | Valid: loss=0.598, acc= 84.8% |
+Epoch  71 | Train: loss=0.012, acc= 99.8% | time=303.3ms | Valid: loss=0.607, acc= 85.6% | lr=9.8e-05
+Epoch  72 | Train: loss=0.016, acc= 99.6% | time=302.7ms | Valid: loss=0.601, acc= 85.6% |
+Epoch  73 | Train: loss=0.010, acc= 99.8% | time=302.8ms | Valid: loss=0.584, acc= 85.6% |
+Epoch  74 | Train: loss=0.011, acc= 99.8% | time=302.5ms | Valid: loss=0.624, acc= 83.6% |
+Epoch  75 | Train: loss=0.012, acc= 99.7% | time=306.5ms | Valid: loss=0.667, acc= 84.8% |
+Epoch  76 | Train: loss=0.012, acc= 99.7% | time=308.9ms | Valid: loss=0.550, acc= 83.2% |
+Epoch  77 | Train: loss=0.012, acc= 99.8% | time=302.5ms | Valid: loss=0.677, acc= 82.4% | lr=4.9e-05
+Test: loss=0.715 , acc= 83.1%
+#####len(mat_list)#####len(grad_list) 5 5
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (48, 20184)
+Layer 2 : (576, 14400)
+Layer 3 : (512, 2500)
+Layer 4 : (1024, 125)
+Layer 5 : (2048, 125)
+------------------------------
+threshold_list:  [0.997 0.997 0.997 0.997 0.997]
+Gradient Matrix torch.Size([64, 48])
+Matrix waiting to be decomposed torch.Size([640, 48])
+Rank of Matrix： tensor(1, device='cuda:0')
+space_list[i] torch.Size([48, 1])
+Revised space_list[i] torch.Size([48, 4])
+Gradient Matrix torch.Size([128, 576])
+Matrix waiting to be decomposed torch.Size([1280, 576])
+Rank of Matrix： tensor(576, device='cuda:0')
+space_list[i] torch.Size([576, 576])
+Revised space_list[i] torch.Size([576, 117])
+Gradient Matrix torch.Size([256, 512])
+Matrix waiting to be decomposed torch.Size([2560, 512])
+Rank of Matrix： tensor(512, device='cuda:0')
+space_list[i] torch.Size([512, 512])
+Revised space_list[i] torch.Size([512, 126])
+Gradient Matrix torch.Size([2048, 1024])
+Matrix waiting to be decomposed torch.Size([20480, 1024])
+Rank of Matrix： tensor(4, device='cuda:0')
+space_list[i] torch.Size([1024, 4])
+Revised space_list[i] torch.Size([1024, 240])
+Gradient Matrix torch.Size([2048, 2048])
+Matrix waiting to be decomposed torch.Size([20480, 2048])
+Rank of Matrix： tensor(3, device='cuda:0')
+space_list[i] torch.Size([2048, 3])
+Revised space_list[i] torch.Size([2048, 409])
+----------------------------------------
+Common Null Space Matrix
+----------------------------------------
+Layer 1 : 48 * 4
+Layer 2 : 576 * 117
+Layer 3 : 512 * 126
+Layer 4 : 1024 * 240
+Layer 5 : 2048 * 409
+----------------------------------------
+Current memory usage: RSS=7350.57MB, VMS=20264.81MB
+Accuracies =
+	 77.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 75.1%  72.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 72.1%  66.7%  77.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 71.2%  65.4%  74.3%  75.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 70.9%  65.0%  72.1%  73.6%  78.6%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 65.5%  61.2%  68.5%  68.7%  75.0%  78.8%   0.0%   0.0%   0.0%   0.0% 
+	 60.4%  58.0%  67.5%  62.6%  70.7%  73.2%  81.8%   0.0%   0.0%   0.0% 
+	 62.3%  56.3%  63.1%  61.1%  66.7%  69.2%  74.6%  74.7%   0.0%   0.0% 
+	 59.2%  54.9%  59.0%  59.0%  67.1%  66.3%  72.3%  71.8%  74.3%   0.0% 
+	 60.3%  59.8%  60.2%  61.6%  67.0%  68.1%  73.1%  67.8%  71.7%  82.6% 
+--------------------------------------------------
+Final Avg Accuracy: 67.22%
+Backward transfer: -11.30%
+[Elapsed time = 348524.3 ms]
+--------------------------------------------------
+The end time is: 2024-03-24 07:28:13
